@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	text-align: center;
+	color:#666;
+	font-family:"Î¢ÈíÑÅºÚ","ËÎÌå";
+}
+a{
+	text-decoration:none;
+	font: normal normal normal 12px/1.75 Tahoma, Arial;
+}
+a:link,a:visited{
+	color:#666; 
+}
+#loginbox{
+	font-family:"Î¢ÈíÑÅºÚ","ËÎÌå";
+	width:300px;
+	height:180px;
+	margin:250px auto;
+	background:#FFF;
+	border:#CCC 1px solid;
+	overflow:hidden;
+	border-bottom-left-radius: 15px 15px;
+	border-bottom-right-radius: 15px 15px;
+	border-top-left-radius: 15px 15px;
+	border-top-right-radius: 15px 15px;
+}
+#loginboxtitle{
+	height:40px;
+	background:#5BA5F7;
+}
+#loginboxtitle span{
+	line-height:40px;
+	height:40px;
+	color:#FFF;
+	font-size:14px;
+	font-weight:500;
+}
+#loginbox form{
+	margin-top:15px;
+}
+#loginbox .item{
+	clear:both;
+}
+#loginbox .item label{
+	display:block;
+	text-align:right;
+	width:100px;
+	height:2.2em;
+	font-size:18px;
+	line-height:2.2em;
+	float:left;
+	color:#5C9BCC;
+}
+#loginbox .item .input{
+	border: 1px solid #CCC;
+	margin-bottom: 16px;
+	margin-right: 6px;
+	margin-top: 2px;
+	padding: 3px;
+	width: 120px;
+	border-bottom-left-radius: 2px 2px;
+	border-bottom-right-radius: 2px 2px;
+	border-top-left-radius: 2px 2px;
+	border-top-right-radius: 2px 2px;
+}
+.inputneedmar{
+	font-size: 18px;
+	margin-left:110px;
+	margin-bottom:16px;
+}

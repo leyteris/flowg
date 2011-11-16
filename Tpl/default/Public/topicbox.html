@@ -1,0 +1,30 @@
+			<div id="{$trs.id}" class="topicbox listbody">
+				<div class="userpic">
+                	<a href="{$webpath}{$urs.homepage}"><img alt="{$urs.nickname}" src="{:getUserAvatar($urs['avatar'],50)}" /></a>
+                </div>
+                <div class="listbodyright">
+                	<a class="username" href="{$webpath}{$urs.homepage}">{$urs.nickname}:</a>
+                    <p class="usermsg">
+                    	{$trs.content}
+                    </p>
+                    <if condition= "$trs.imgid neq 0"> 
+	                            <div class="useruppic">
+	                            	<a class="artZoom" href="{$trs.topicpic.url}" rel="{$trs.topicpic.url}">
+	                            		<img src="{$trs.topicpic.thumb_url}" />
+									</a>
+								</div>
+					</if>
+                    <div class="listfooter">
+                    <div class="listfooterl">
+                    <span class="listuptime">{$trs.create_time}</span>
+                    <span class="listupclt">来自<a href="#">{$trs.from}</a></span>
+                    </div>
+                    <div class="listfooterr">
+                     <span><a href="javascript:void(0)" class="transmitbtn">转发</a></span>
+                     <span><a href="javascript:void(0)" class="commentbtn">评论</a></span>
+                     <span><a href="javascript:void(0)" class="attabtn" onmouseout="F.addAttaTxt('对 @{$urs.homepage} 说：')">@TA</a></span>
+                     <span><a href="{:U('ajax/ajaxAddFavorite')}?tid={$vo.id}" class="addfavoritebtn">收藏</a></span>
+                     </div>
+                 </div>
+           		</div>
+           		</div>

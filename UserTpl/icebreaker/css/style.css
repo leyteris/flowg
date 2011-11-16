@@ -1,0 +1,56 @@
+@CHARSET "UTF-8";
+body{
+	background:#04111D url(../images/back.png) no-repeat;
+	background-position:center top ;
+	text-align: center;
+	color:#666;
+}
+.top-toolbar a:link,.top-toolbar a:visited,
+.header a:link,.header a:visited{
+	color:#468795; 
+}
+.blogbody {
+	overflow:hidden;
+	border-bottom-left-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+	filter:alpha(opacity=90); /*IE滤镜，透明度90%*/
+	-moz-opacity:0.9; /*Firefox私有，透明度90%*/
+	opacity:0.9
+}
+.blogbody .right-nav {
+	background:#E8F3CA;
+	border-left:solid 1px #CCC;
+}
+
+.blogbody .right-nav a{
+	color:#468795;
+}
+.top-toolbar-div span a{
+	color:#468795;
+}
+.header-menu a{
+	color:#468795;
+	font-height:18px;
+}
+.right-nav .hotht li a{
+	color:#468795;
+}
+.right-nav .r-pro li,.right-nav .r-pro p{
+	color:#468795;
+}
+.userinfo em{
+	color:#468795;
+}
+.top-toolbar .top-toolbar-bg{
+	filter:alpha(opacity=40); /*IE滤镜，透明度40%*/
+	-moz-opacity:0.4; /*Firefox私有，透明度40%*/
+	opacity:0.4;
+}
+.header-menu .header-menu-bg{
+	filter:alpha(opacity=60); /*IE滤镜，透明度60%*/
+	-moz-opacity:0.6; /*Firefox私有，透明度60%*/
+	opacity:0.6
+}
+	

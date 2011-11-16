@@ -1,0 +1,209 @@
+[ 2010-12-12T21:40:10+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.217269s ]
+[ 2010-12-12T21:40:10+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.034155s ]
+[ 2010-12-12T21:40:17+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.098887s ]
+[ 2010-12-12T21:40:17+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.033865s ]
+[ 2010-12-12T21:40:22+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.114297s ]
+[ 2010-12-12T21:40:22+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.053079s ]
+[ 2010-12-12T21:41:56+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.023810s ]
+[ 2010-12-12T21:41:56+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.037055s ]
+[ 2010-12-12T21:42:01+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.034781s ]
+[ 2010-12-12T21:42:01+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.035445s ]
+[ 2010-12-12T21:42:32+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.016949s ]
+[ 2010-12-12T21:42:32+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.037948s ]
+[ 2010-12-12T21:43:19+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.073025s ]
+[ 2010-12-12T21:43:19+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.061741s ]
+[ 2010-12-12T21:45:42+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.062229s ]
+[ 2010-12-12T21:45:42+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.040266s ]
+[ 2010-12-12T21:45:46+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.025031s ]
+[ 2010-12-12T21:45:46+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T21:45:46+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T21:45:46+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('weredasdasd as','1',1292161546) [ RunTime:0.114357s ]
+[ 2010-12-12T21:45:46+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T21:45:46+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T21:50:43+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.067978s ]
+[ 2010-12-12T21:50:43+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.046093s ]
+[ 2010-12-12T21:52:03+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.112698s ]
+[ 2010-12-12T21:52:03+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T21:52:03+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T21:52:03+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('阿四大四大撒打死打死打死的','1',1292161923) [ RunTime:0.037388s ]
+[ 2010-12-12T21:52:03+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T21:52:03+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T21:52:11+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.081894s ]
+[ 2010-12-12T21:52:11+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T21:52:11+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T21:52:11+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('阿四大四大撒打死打死打死的阿四大四大','1',1292161931) [ RunTime:0.033273s ]
+[ 2010-12-12T21:52:11+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T21:52:11+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T21:52:18+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.064746s ]
+[ 2010-12-12T21:52:18+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T21:52:18+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T21:52:18+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('阿四大四大撒打死打死打死的阿四大四大爱仕达书店','1',1292161938) [ RunTime:0.033246s ]
+[ 2010-12-12T21:52:18+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T21:52:18+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:04:17+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.098144s ]
+[ 2010-12-12T22:04:17+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.036481s ]
+[ 2010-12-12T22:04:24+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.017020s ]
+[ 2010-12-12T22:04:24+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:04:24+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:04:24+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('weredasdasdasd','1',1292162664) [ RunTime:0.042217s ]
+[ 2010-12-12T22:04:24+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:04:24+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:06:25+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.142886s ]
+[ 2010-12-12T22:06:25+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.045626s ]
+[ 2010-12-12T22:07:43+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.053041s ]
+[ 2010-12-12T22:07:43+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.035807s ]
+[ 2010-12-12T22:07:45+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.032273s ]
+[ 2010-12-12T22:07:45+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.050797s ]
+[ 2010-12-12T22:07:48+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.100911s ]
+[ 2010-12-12T22:07:48+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:07:48+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:07:48+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('所得税的反对法','1',1292162868) [ RunTime:0.042663s ]
+[ 2010-12-12T22:07:48+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:07:48+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:08:39+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.072079s ]
+[ 2010-12-12T22:08:39+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.037601s ]
+[ 2010-12-12T22:08:42+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.094513s ]
+[ 2010-12-12T22:08:42+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:08:42+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:08:42+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('斯蒂芬斯蒂芬斯蒂芬','1',1292162922) [ RunTime:0.035832s ]
+[ 2010-12-12T22:08:42+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:08:42+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:08:47+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.026332s ]
+[ 2010-12-12T22:08:47+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.056026s ]
+[ 2010-12-12T22:08:51+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.037396s ]
+[ 2010-12-12T22:08:51+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:08:51+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:08:51+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('asdasdasd','1',1292162931) [ RunTime:0.080158s ]
+[ 2010-12-12T22:08:51+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:08:51+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:09:00+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.034371s ]
+[ 2010-12-12T22:09:00+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.042638s ]
+[ 2010-12-12T22:09:02+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.091491s ]
+[ 2010-12-12T22:09:02+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:09:02+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:09:02+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('asdasd ','1',1292162942) [ RunTime:0.094573s ]
+[ 2010-12-12T22:09:02+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:09:02+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:09:18+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.169139s ]
+[ 2010-12-12T22:09:18+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.039095s ]
+[ 2010-12-12T22:09:20+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.033352s ]
+[ 2010-12-12T22:09:20+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:09:20+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:09:20+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('asdasd ','1',1292162960) [ RunTime:0.039228s ]
+[ 2010-12-12T22:09:20+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:09:20+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:09:32+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.034988s ]
+[ 2010-12-12T22:09:32+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.065116s ]
+[ 2010-12-12T22:09:36+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.034244s ]
+[ 2010-12-12T22:09:36+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:09:36+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:09:36+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('asdassdas阿四大四大是','1',1292162976) [ RunTime:0.042265s ]
+[ 2010-12-12T22:09:36+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:09:36+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:09:42+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.052292s ]
+[ 2010-12-12T22:09:42+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:09:42+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:09:42+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('按时打算','1',1292162982) [ RunTime:0.036858s ]
+[ 2010-12-12T22:09:42+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:09:42+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:09:47+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.033627s ]
+[ 2010-12-12T22:09:47+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:09:47+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:09:47+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('阿四大四大是的','1',1292162987) [ RunTime:0.040167s ]
+[ 2010-12-12T22:09:47+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:09:47+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:09:51+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.103466s ]
+[ 2010-12-12T22:09:51+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:09:51+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:09:51+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('阿四大四大','1',1292162991) [ RunTime:0.039715s ]
+[ 2010-12-12T22:09:51+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:09:51+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:10:04+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.113996s ]
+[ 2010-12-12T22:10:04+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.052626s ]
+[ 2010-12-12T22:10:06+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.106496s ]
+[ 2010-12-12T22:10:06+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:10:06+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:10:07+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('阿斯','1',1292163006) [ RunTime:0.049247s ]
+[ 2010-12-12T22:10:07+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:10:07+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:10:15+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.035016s ]
+[ 2010-12-12T22:10:15+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:10:15+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:10:15+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('asdas ','1',1292163015) [ RunTime:0.039750s ]
+[ 2010-12-12T22:10:15+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:10:15+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:14:06+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.111766s ]
+[ 2010-12-12T22:14:06+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.074190s ]
+[ 2010-12-12T22:14:09+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.042859s ]
+[ 2010-12-12T22:14:09+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:14:09+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:14:09+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('asdasas','1',1292163249) [ RunTime:0.038629s ]
+[ 2010-12-12T22:14:09+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:14:09+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:14:24+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.101172s ]
+[ 2010-12-12T22:14:24+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.052752s ]
+[ 2010-12-12T22:14:26+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.179741s ]
+[ 2010-12-12T22:14:26+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:14:26+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:14:26+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('asasdasd','1',1292163266) [ RunTime:0.039445s ]
+[ 2010-12-12T22:14:26+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:14:26+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:38:19+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.174828s ]
+[ 2010-12-12T22:38:19+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:38:19+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:38:19+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('asasdasd','1',1292164699) [ RunTime:0.038333s ]
+[ 2010-12-12T22:38:19+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:38:19+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:47:28+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.091637s ]
+[ 2010-12-12T22:47:28+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.042586s ]
+[ 2010-12-12T22:47:32+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.032922s ]
+[ 2010-12-12T22:47:32+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:47:32+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:47:32+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('啊啊所得税的','1',1292165252) [ RunTime:0.037181s ]
+[ 2010-12-12T22:47:32+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:47:32+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:47:36+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.027361s ]
+[ 2010-12-12T22:47:36+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:47:36+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:47:36+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('啊啊所得税的阿斯大萨斯的','1',1292165256) [ RunTime:0.041208s ]
+[ 2010-12-12T22:47:36+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:47:36+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:47:42+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.054175s ]
+[ 2010-12-12T22:47:42+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:47:42+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:47:42+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('啊啊所得税的阿斯大萨斯的奥斯丁','1',1292165262) [ RunTime:0.037825s ]
+[ 2010-12-12T22:47:42+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:47:42+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:47:50+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.089530s ]
+[ 2010-12-12T22:47:50+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:47:50+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:47:50+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('啊啊所得税的阿斯大萨斯的奥斯丁四大飒飒飒飒达斯','1',1292165270) [ RunTime:0.049647s ]
+[ 2010-12-12T22:47:50+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:47:50+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:48:09+08:00 ] ERR: (ThinkException) Can't connect to MySQL server on 'localhost' (10061)
+[ 2010-12-12T22:48:37+08:00 ] ERR: (ThinkException) Can't connect to MySQL server on 'localhost' (10061)
+[ 2010-12-12T22:48:40+08:00 ] ERR: (ThinkException) Can't connect to MySQL server on 'localhost' (10061)
+[ 2010-12-12T22:48:58+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.030930s ]
+[ 2010-12-12T22:48:58+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:48:58+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:48:58+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('阿斯大萨斯的','1',1292165338) [ RunTime:0.035890s ]
+[ 2010-12-12T22:48:58+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:48:58+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:49:01+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.033384s ]
+[ 2010-12-12T22:49:01+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:49:01+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:49:01+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('阿斯大萨斯的','1',1292165341) [ RunTime:0.057835s ]
+[ 2010-12-12T22:49:01+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:49:01+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:49:04+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.033996s ]
+[ 2010-12-12T22:49:04+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:49:04+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:49:04+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('阿斯大萨斯的阿斯大萨斯的','1',1292165344) [ RunTime:0.039297s ]
+[ 2010-12-12T22:49:04+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:49:04+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-12T22:49:30+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.102065s ]
+[ 2010-12-12T22:49:30+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:49:30+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-12T22:49:30+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('阿斯大萨斯的阿斯大萨斯的沃尔夫斯蒂芬斯蒂芬','1',1292165370) [ RunTime:0.060843s ]
+[ 2010-12-12T22:49:30+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-12T22:49:30+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.

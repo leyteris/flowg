@@ -1,0 +1,102 @@
+<include file="Public:header" />
+        <div id="wrapper">
+        	<div id="maintitle">
+            	<span id="thistitle">>>系统设置</span>
+            	<a class="floatright" href="{:U('global/logout')}">注销</a>
+	            <span class="floatright">欢迎您！{@BackUserName}  </span>
+            </div>
+            <div id="main">
+                <form name="form" id="form" action="{:U('system/doedit')}" method="post">
+                    <div class="item">
+                        <label for="ftitle">
+                           	站点名称：
+                        </label>
+                        <input type="text" name="ftitle" id="ftitle" class="input" value="{$r.ftitle}"/>
+                    </div>
+                    <div class="item">
+                        <label for="title">
+                           	站点标题：
+                        </label>
+                        <input type="text" name="title" id="title" class="input" value="{$r.title}" style="width:400px;"/>
+                    </div>
+                    <div class="item">
+                        <label for="description">
+                           	站点描述：
+                        </label>
+                        <input type="text" name="description" id="description" class="input" value="{$r.description}" style="width:400px;"/>
+                    </div>
+                    <div class="item">
+                        <label for="keyword">
+                           	关键词：
+                        </label>
+                        <input type="text" name="keyword" id="keyword" class="input" value="{$r.keyword}" style="width:400px;"/>
+                    </div>
+                    <div class="item">
+                        <label for="domain">
+                           	域名：
+                        </label>
+                        <input type="text" name="domain" id="domain" class="input" value="{$r.domain}" />
+                    </div>
+                    <div class="item">
+                        <label for="no_user">
+                          	 限制注册账号名
+                        </label>
+                        <input type="text" name="no_user" id="no_user" class="input" value="{$r.no_user}" />
+                    </div>
+                    <div class="item">
+                        <label for="no_tag">
+                          	 限制发布话题
+                        </label>
+                        <input type="text" name="no_tag" id="no_tag" class="input" value="{$r.no_tag}"/>
+                    </div>
+                    <div class="item">
+                        <label for="no_word">
+                          	 限制发布词汇
+                        </label>
+                        <input type="text" name="no_word" id="no_word" class="input" value="{$r.no_word}"/>
+                    </div>
+                    <div class="item">
+                        <label for="send_check">
+                           	 限制发言时间
+                        </label>
+                        <input type="text" name="send_check" id="send_check" class="input" value="{$r.send_check}"/>
+                    </div>
+                    <div class="item">
+                        <label for="ip_check">
+                           	是否限制ip
+                        </label>
+                        <select name="ip_check" class="input" id="ip_check">
+                        	<option value="0">否</option>
+                            <option value="1" <?php if($r["ip_check"] == 1): ?>selected=""<?php endif; ?>>是</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="is_reg">
+                           	是否允许注册
+                        </label>
+                        <select name="is_reg" class="input" id="is_reg">
+                        	<option value="0">否</option>
+                            <option value="1" <?php if($r["is_reg"] == 1): ?>selected=""<?php endif; ?>>是</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="file_size">
+                           	上传限制大小
+                        </label>
+                        <input type="text" name="file_size" id="file_size" class="input" value="{$r.file_size}"/>
+                    </div>
+                    <div class="item">
+                        <label for="comment_open">
+                           	 评论是否开启
+                        </label>
+                        <select name="comment_open" class="input" id="comment_open">
+                        	<option value="0">否</option>
+                            <option value="1" <?php if($r["comment_open"] == 1): ?>selected=""<?php endif; ?>>是</option>
+                        </select>
+                    </div>
+                    <input name="id" type="hidden"  value="{$r.id}"  />
+                    <input type="submit" class="inputneedmar" name="submit" id="submit" value="  提 交  " tabindex="120" />
+                </form>
+            </div>
+        </div>
+<include file="Public:footer" />

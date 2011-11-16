@@ -1,0 +1,48 @@
+<include file="Public:header" />
+    <div class="blogbody">
+    	<if condition= "$detailflag eq 1"> 
+			<include file="Index:homeright" />
+		<else />
+			<include file="Index:right" />
+		</if>   	
+        <div class="left-nav">
+            <if condition= "$detailflag eq 1"> 
+				<include file="Public:detailbox" />
+			</if>
+            <div class="msglistbox">
+                <ul id="msglistmenu">
+                	<if condition= "$detailflag eq 1"> 
+						<li><a href="{:U('follow/index')}?uid={$rs.id}">TA的关注</a></li>
+						<li><a href="{:U('follow/fans')}?uid={$rs.id}">TA的粉丝</a></li>
+					<else />
+						<li><a href="{:U('follow/index')}">我的关注</a></li>
+						<li><a href="{:U('follow/fans')}">我的粉丝</a></li>
+					</if>  
+                </ul>
+                <ul id="followlist">
+                <volist name="list" id="vo">
+                    <li class="listbody">
+                    	<div class="userpic">
+                        	<a href="{$webpath}{$vo.homepage}"><img alt="{$vo.nickname}" src="{:getUserAvatar($vo['avatar'],50)}" /></a>
+                        </div>
+                        <div class="listbodyright">
+                            <a class="username" href="{$webpath}{$vo.homepage}">{$vo.nickname}</a>
+                            <div class="clear">最近发布微博于   {$vo.lasttopic.create_time} 来自{$vo.lasttopic.from}</div>
+							<div class="usermsg">{$vo.lasttopic.content}</div>
+							<div class="detailbody">
+								<span><a href="{:U('follow/index')}?uid={$vo.id}">关注<em>{$vo.thisfollowerfollows|default="0"}</em>人</a></span>
+                            	<span><a href="{:U('follow/fans')}?uid={$vo.id}">粉丝<em>{$vo.thisfollowerfans|default="0"}</em>人</a></span>
+                            </div>
+							<div><a class="followta" href="{:U('ajax/ajaxFollow')}?objuid={$vo.id}">关注TA</a></div>
+                        </div>
+                    </li>
+                </volist>
+                </ul>
+                <div class="pages">
+					{$page}
+            	</div>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public:footer" />

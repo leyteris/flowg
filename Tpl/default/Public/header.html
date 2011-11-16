@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="sitename" content="Flowg微博">
+<meta name="author" content="Leyteris">
+<meta name="keyword" content="{$site.keyword}">
+<meta name="description" content="{$site.description}">
+<title>{$site.title}</title>
+<include file="Public:varscript" />
+<load href= "__TMPL__Public/js/jquery-1.4.4.js" />
+<load href= "__TMPL__Public/js/jquery-ui-1.8.4.custom.js" />
+<load href= "__TMPL__Public/js/jquery.form.js" /> 
+<load href= "__TMPL__Public/js/jquery.alerts.js" /> 
+<load href= "__TMPL__Public/js/jquery.ajaxfileupload.js" />
+<load href= "__TMPL__Public/js/global.js" /> 
+<load href= "__TMPL__Public/css/reset.css" /> 
+<load href= "__TMPL__Public/css/fonts.css" /> 
+<load href= "__TMPL__Public/css/jQcss/jquery.ui.all.css" />
+<load href= "__TMPL__Public/css/jquery.alerts.css" /> 
+<load href= "__TMPL__Public/css/css.css" />
+
+<if condition= "$stylers neq 0">
+	<link rel="stylesheet" type="text/css" id="userStyle" href="{$webpath}{$stylers.path}css/style.css" /> 
+</if>
+</head>
+<body>
+<div class="top-toolbar">
+	<div class="top-toolbar-bg"></div>
+	<div class="top-toolbar-div">
+    	<div class="left left-toolbar">
+            <span><a href="{:U('piazza/index')}">微博广场</a></span>
+            <span><a href="{:U('hall/index')}">风云堂</a></span>
+            <span><a href="{:U('piazza/stroll')}">随便看看</a></span>
+            <span><a href="{:U('lab/index')}">Lab实验室</a></span>
+            <span><a href="{:U('index/api')}" target="_blank">开放API</a></span>
+    	</div>
+    	<div class="right">
+            <span class="top-username">
+                <a href="{$webpath}{$userinfo.homepage}" title="{$userinfo.userid}(@{$userinfo.userid})">{$userinfo.nickname}</a>
+            </span>
+            <span><a href="{:U('setting/index')}">设置</a></span>
+            <span><a href="{:U('news/index')}" target="_blank">公告</a></span>
+            <span><a href="{:U('index/log')}" target="_blank">开发日志</a></span>
+            <span><a href="{:U('global/logout')}">注销</a></span>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+	<div class="header">
+    	<div class="logo">
+        	<a class="linklogo" href="{$webpath}"><span>Flowg 微博 - Beta 2.1 测试版</span></a>
+        </div>
+        <div class="header-menu"> 
+        	<div class="header-menu-bg"></div>
+            <div class="menu-c"> 
+                <ul> 
+                	<li class="cur"><a href="{:U('index/index')}">首页</a></li> 
+                	<li class="line">|</li> 
+                	<li><a href="{:U('piazza/index')}">微博广场</a></li> 
+                 	<li class="line">|</li> 
+                 	<li><a href="{:U('hall/index')}">风云堂</a></li> 
+                	<li class="line">|</li> 
+               	 	<li><a href="{:U('setting/setStyle')}">换肤</a></li> 
+                </ul> 
+                <form id="searchForm" method="post" action="{:U('search/index')}">
+                	<input type="text" id="searchTxt" maxlength="50" name="searchTxt"/>
+                	<input type="submit" id="searchbtn" value="搜索"/>
+                </form>
+            </div>
+        </div>  
+    </div>

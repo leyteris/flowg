@@ -1,0 +1,9 @@
+            <div class="r-pro hotht">
+            	<h1>热门话题</h1>
+                <ul>
+                <volist name="toptag" id="vo">
+                	<li><a href="{:U('tag/index')}?tagid={$vo.id}">{$vo.tagname}<em>({$vo.count})</em></a></li>
+                </volist>
+                </ul>
+                <span class="right"><a href="{:U('hall/hottag')}">查看更多热门话题>></a></span>
+            </div>

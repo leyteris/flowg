@@ -1,0 +1,20 @@
+        	<div id="detailbox">
+				<a href="{$webpath}{$rs.homepage}" class="userbigpic"><img src="{:getUserAvatar($rs['avatar'],120)}" alt="{$rs.nickname}"/></a>
+                <div id="detailright">
+                	<h1>
+                    	<span class="userheader">{$rs.nickname}</span>
+                        <span>(@{$rs.homepage})</span><br />
+                        <a href="{$webpath}{$rs.homepage}">{$webpath}{$rs.homepage}</a>
+                    </h1>
+                    <div id="followdetail">
+                    	<a href="{$webpath}{$rs.homepage}">发布微博<em>{$topiccount|default="0"}</em>条</a>
+                        <span>|</span>
+                        <a href="{:U('follow/index')}?uid={$rs.id}">关注<em>{$follows|default="0"}</em>人</a>
+                        <span>|</span>
+                        <a href="{:U('follow/fans')}?uid={$rs.id}">粉丝<em>{$fans|default="0"}</em>人</a>
+                    </div>
+					<div>
+						<a href="{:U('ajax/ajaxFollow')}?objuid={$rs.id}" class="followta">关注TA</a>
+					</div>
+                </div>
+            </div>

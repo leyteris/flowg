@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Flowg微博 - 分享沟通 从这里开始 </title>
+<script type="text/javascript">
+	var __PUBLIC = '__TMPL__Public/';
+</script>
+<load href= "__TMPL__Public/js/jquery-1.4.4.js" />
+<load href= "__TMPL__Public/js/jquery.form.js" /> 
+<load href= "__TMPL__Public/js/global.js" /> 
+<load href= "__TMPL__Public/css/reset.css" /> 
+<load href= "__TMPL__Public/css/fonts.css" /> 
+<load href= "__TMPL__Public/css/css.css" /> 
+</head>
+<body>
+<div class="top-toolbar">
+	<div class="top-toolbar-bg"></div>
+	<div class="top-toolbar-div">
+    	<div class="left left-toolbar">
+        	<span><a href="#">微博首页</a></span>
+            <span><a href="#">广场</a></span>
+            <span><a href="#">话题堂</a></span>
+    	</div>
+    	<div class="right">
+            <span class="top-username">
+                <a href="/leyteris" title="Leyteris(@leyteris)">Leyteris</a>
+            </span>
+            <span><a href="/setting">设置</a></span>
+            <span><a href="#" id="setTheme" title="皮肤设置">换肤</a></span>
+            <span><a href="/client.php?t=mobile">手机</a></span>
+            <span><a href="/invite/friends.php" id="invite">邀请</a></span>
+            <span><a href="http://t.qzone.qq.com" target="_blank">公告</a></span>
+            <span><a href="/help.php" target="_blank">帮助</a></span>
+            <span><a href="global/logout">退出</a></span>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+	<div class="header">
+    	<div class="logo">
+        	<a class="linklogo" href="#"><span>Flowg 微博 - Beta 2.1 测试版</span></a>
+        </div>
+        <div class="header-menu"> 
+        	<div class="header-menu-bg"></div>
+            <div class="menu-c"> 
+                <ul> 
+                	<li class="cur"><a href="#">我的首页</a></li> 
+                	<li class="line">|</li> 
+                	<li><a href="#">微博广场</a></li> 
+                 	<li class="line">|</li> 
+                 	<li><a href="#">话题堂</a></li> 
+                	<li class="line">|</li> 
+               	 	<li><a href="#">模板</a></li> 
+                </ul> 
+                <form id="searchForm" method="get" action="/search/index.php">
+                	<input type="text" id="searchKey" maxlength="50" name="k" autocomplete="off" class="inputTxt"/>
+                	<input type="submit" class="inputBtn" value="搜索"/><input type="hidden" name="pos" value="101" />
+                </form>
+            </div>
+        </div>  
+    </div>
+    <div class="blogbody">
+    	<div class="right-nav">
+        	<div class="right-nav-bg"></div>
+    		<div class="userinfo">
+            	<div class="user-head"> 
+					<div class="userheadpic">
+                		<a href="#" title="Leyteris"><img src="images/50.jpg" alt="Leyteris"/></a>
+               	 	</div> 
+					<div class="userheadbody"> 
+						<p>
+                    		<a class="font_14" href="{$domain}/{$userinfo.homepage}">{$userinfo.userid|default=getUserNameID}</a> 
+						</p> 
+						<p><em>浙江</em><em>杭州</em></p>
+                	</div> 
+				</div> 
+                <div class="follow-body">
+                    <ul>
+                        <li class="borright">
+                            <span><a href="#">微博</a></span>
+                            <span class="num"><a href="#">{$topiccount|default="0"}</a></span>
+                        </li>
+                        <li class="borright">
+                            <span><a href="#">关注</a></span>
+                            <span class="num"><a href="#">{$follows|default="0 "}</a></span>
+                        </li>
+                        <li>
+                            <span><a href="#">粉丝</a></span>
+                            <span class="num"><a href="#">{$fans|default="0"}</a></span>
+                        </li>
+                    </ul>
+                </div>
+        	</div>
+        	<div class="right-nav-list">
+            	<ul>
+                	<li><a href="#">我的首页</a></li>
+                    <li><a href="#">我的广播</a></li>
+                    <li><a href="#">@提到我的</a></li>
+                    <li><a href="#">我的评论</a></li>
+                    <li><a href="#">我的收藏</a></li>
+                    <li><a href="#">私信</a></li>
+                </ul>
+            </div>
+            <div class="r-pro hotht">
+            	<h1>热门话题</h1>
+                <ul>
+                <volist name="toptag" id="vo">
+                	<li><a href="#">{$vo.tagname}<em>({$vo.count})</em></a></li>
+                </volist>
+                </ul>
+                <span class="right"><a href="#">查看更多热门话题>></a></span>
+            </div>
+            <div class="r-pro knowuser">
+            	<h1>可能感兴趣的人</h1>
+                <ul>
+                	<li>
+                    	<div class="knowuser-pic">
+                        	<a href="#" title="Leyteris"><img src="__TMPL__Public/images/50.jpg"/></a>
+                        </div>
+                        <div class="knowuser-info">
+                        	<p><a href="#" title="Leyteris">Leyteris</a></p>
+                            <p><a href="#" title="关注">+关注</a></p>
+                            <p>同城的朋友</p>
+                        </div>
+                    </li>
+                    <li>
+                    	<div class="knowuser-pic">
+                        	<a href="#" title="Leyteris"><img src="__TMPL__Public/images/50.jpg"/></a>
+                        </div>
+                        <div class="knowuser-info">
+                        	<p><a href="#" title="Leyteris">Leyteris</a></p>
+                            <p><a href="#" title="关注">+关注</a></p>
+                            <p>同城的朋友</p>
+                        </div>
+                    </li>
+                </ul>
+                <span class="right"><a href="#">更多>></a></span>
+            </div>
+            <div class="r-pro">
+            	<h1>版本信息</h1>
+                <ul>
+                	<li>Flowg微博系统:Beta1.1</li>
+                	<li>UI设计:Leyteris</li>
+                    <li>前台完成时间:2010.12</li>
+                    <li>后台架设:Leyteris</li>
+                    <li>后台完成时间:2011.1</li>
+                    <li>个人主页:<a href="leyteris.javaeye.com">leyteris.javaeye.com</a></li>
+                </ul>
+            </div>
+            <div class="r-pro">
+            	<h1>Flowg微博意见反馈</h1>
+                <ul>
+                	<p>欢迎使用新浪微博并提出宝贵建议。请点击这里提交微博意见反馈。</p>
+                	<p>可发电子邮件至<a href="mailto:liyichao6@sina.com">liyichao6@sina.com</a></p>
+                    <p>或者以QQ形式发送到58237760</p>
+                </ul>
+            </div>
+        </div>
+        <div class="left-nav">
+        	<div id="msgbox">
+        		<form action="ajax/ajaxInsertTopic" method="post" id="msgform" name="msgform">
+	            	<h1><label for="talkbox">来,有什么新鲜事想告诉大家？</label></h1>
+	                <textarea id="talkbox" name="content"></textarea>
+	                <div class="funcbox">
+	                	<a href="javascript:void(0)" id="insertExpressionBtn">表情</a>
+	                	<a href="javascript:void(0)" id="insertActivity">新建话题</a>
+	                    <a href="javascript:void(0)" id="insertPicBtn">插入图片</a>
+	                </div>
+                    <div id="floatWrap" style="display:none;">
+                    	<div id="floatWrapTitle">
+                        	<h1></h1>
+                            <a class="closeBox" href="javascript:void(0);" title="关闭">关闭</a>
+                        </div>
+                        <div id="floatWrapBody">
+                        </div>
+                    </div>
+					<span id="talkbtnspan"><input name="talkbtn" id="talkbtn" type="submit" value="发布"/></span>
+	                <span id="lefttext">你还可以输入<em>140</em>字</span>
+				</form>
+            </div>
+            <div class="msglistbox">
+                <ul id="msglistmenu">
+                	<li><a href="#">全部微博</a></li>
+                	<li><a href="#">特别关注</a></li>
+                </ul>
+                <ul id="talklist">
+                	<volist name="list" id="vo">
+                    <li class="listbody"  id="{$vo.id}">
+                    	<div class="userpic">
+                        	<a href="#"><img alt="头像" src="__TMPL__Public/images/50.jpg" /></a>
+                        </div>
+                        <div class="listbodyright">
+                            <a class="username" href="#">{$vo.nickname}:</a>
+                            <p class="usermsg">{$vo.content}</p>
+                            <!-- <div class="useruppic"><a class="artZoom" href="__TMPL__Public/images/2000.jpg" rel="__TMPL__Public/images/2000.jpg"><img src="__TMPL__Public/images/160.jpg" /></a></div> -->
+                            <div class="listfooter">
+                            	<div class="listfooterl">
+                                    <span class="listuptime">{$vo.topiccreate_time}</span>
+                                    <span class="listupclt">来自<a href="#">{$vo.from}</a></span>
+                                    <span><a href="javascript:void(0)" class="replylistbtn">查看转发和评论({$vo.count})</a></span>
+                                </div>
+                                <div class="listfooterr">
+                                    <span><a href="javascript:void(0)" class="transmitbtn">转发</a></span>
+                                    <span><a href="javascript:void(0)" class="commentbtn">评论</a></span>
+                                    <span><a href="#">收藏</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    </volist>
+                </ul>
+			{$page}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p>Copyright © 2009 - 2011 Flowg . All Rights Reserved . Design By Leyteris</p>
+</div>
+</body>
+</html>

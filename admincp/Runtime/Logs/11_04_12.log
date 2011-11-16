@@ -1,0 +1,105 @@
+[ 2011-04-12T16:13:33+08:00 ] ERR: (ThinkException) Access denied for user 'root'@'localhost' (using password: NO)
+[ 2011-04-12T16:14:15+08:00 ] ERR: (ThinkException) Access denied for user 'root'@'localhost' (using password: NO)
+[ 2011-04-12T16:14:34+08:00 ] ERR: (ThinkException) 模板不存在[admincp/Tpl/default/Index/index.html]
+[ 2011-04-12T16:15:23+08:00 ] SQL: SHOW COLUMNS FROM fl_category [ RunTime:0.019981s ]
+[ 2011-04-12T16:15:23+08:00 ] SQL: SELECT * FROM `fl_category` [ RunTime:0.086810s ]
+[ 2011-04-12T16:15:24+08:00 ] SQL: SHOW COLUMNS FROM fl_article [ RunTime:0.242582s ]
+[ 2011-04-12T16:15:24+08:00 ] SQL: SHOW COLUMNS FROM fl_category [ RunTime:0.086180s ]
+[ 2011-04-12T16:15:24+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.086941s ]
+[ 2011-04-12T16:15:24+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 LIMIT 1  [ RunTime:0.073021s ]
+[ 2011-04-12T16:15:24+08:00 ] SQL: SELECT article.id AS id,article.title AS title,article.create_time AS create_time,article.content AS content,category.id AS category_id,category.name AS category_name,user.name AS name FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 ORDER BY article.id desc LIMIT 0,8  [ RunTime:0.000952s ]
+[ 2011-04-12T16:18:59+08:00 ] SQL: SHOW COLUMNS FROM fl_category [ RunTime:0.086688s ]
+[ 2011-04-12T16:18:59+08:00 ] SQL: SELECT * FROM `fl_category` [ RunTime:0.033915s ]
+[ 2011-04-12T16:18:59+08:00 ] SQL: SHOW COLUMNS FROM fl_article [ RunTime:0.031502s ]
+[ 2011-04-12T16:19:00+08:00 ] SQL: SHOW COLUMNS FROM fl_category [ RunTime:0.091554s ]
+[ 2011-04-12T16:19:00+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.100965s ]
+[ 2011-04-12T16:19:00+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 LIMIT 1  [ RunTime:0.033204s ]
+[ 2011-04-12T16:19:00+08:00 ] SQL: SELECT article.id AS id,article.title AS title,article.create_time AS create_time,article.content AS content,category.id AS category_id,category.name AS category_name,user.name AS name FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 ORDER BY article.id desc LIMIT 0,8  [ RunTime:0.001408s ]
+[ 2011-04-12T16:42:01+08:00 ] ERR: (ThinkException) Action:showsiteinfo您所请求的方法不存在！
+[ 2011-04-12T16:42:45+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.102830s ]
+[ 2011-04-12T16:42:45+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `name` = 'admin' ) AND ( `password` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1  [ RunTime:0.070973s ]
+[ 2011-04-12T16:42:50+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.040325s ]
+[ 2011-04-12T16:42:50+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `name` = 'admin' ) AND ( `password` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1  [ RunTime:0.042736s ]
+[ 2011-04-12T16:42:56+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.152902s ]
+[ 2011-04-12T16:42:57+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `name` = 'admin' ) AND ( `password` = '8019634edea7b585700e5d086ab9f44c' ) LIMIT 1  [ RunTime:0.043102s ]
+[ 2011-04-12T16:43:23+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.058611s ]
+[ 2011-04-12T16:43:23+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `name` = 'admin' ) AND ( `password` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1  [ RunTime:0.041690s ]
+[ 2011-04-12T16:43:30+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.146208s ]
+[ 2011-04-12T16:43:30+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `name` = 'admin' ) AND ( `password` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1  [ RunTime:0.041012s ]
+[ 2011-04-12T16:43:36+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.116025s ]
+[ 2011-04-12T16:43:36+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `name` = 'admin' ) AND ( `password` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1  [ RunTime:0.036589s ]
+[ 2011-04-12T16:44:58+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.131732s ]
+[ 2011-04-12T16:44:58+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `name` = 'admin' ) AND ( `password` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1  [ RunTime:0.035544s ]
+[ 2011-04-12T16:45:06+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.128877s ]
+[ 2011-04-12T16:45:06+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `name` = 'admin' ) AND ( `password` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1  [ RunTime:0.035823s ]
+[ 2011-04-12T16:45:29+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.126394s ]
+[ 2011-04-12T16:45:29+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `userid` = 'admin' ) AND ( `password` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1  [ RunTime:0.036870s ]
+[ 2011-04-12T16:45:31+08:00 ] SQL: SHOW COLUMNS FROM fl_article [ RunTime:0.220961s ]
+[ 2011-04-12T16:45:31+08:00 ] SQL: SHOW COLUMNS FROM fl_category [ RunTime:0.051756s ]
+[ 2011-04-12T16:45:31+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.074457s ]
+[ 2011-04-12T16:45:31+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 LIMIT 1  [ RunTime:0.057241s ]
+[ 2011-04-12T16:45:31+08:00 ] SQL: SELECT article.id AS id,article.title AS title,article.create_time AS create_time,category.name AS category_name,user.name AS name FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 ORDER BY article.id desc LIMIT 0,8  [ RunTime:0.001547s ]
+[ 2011-04-12T16:45:31+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() IndexAction.class.php 第 22 行.
+[ 2011-04-12T16:45:31+08:00 ] NOTIC: [8] Undefined variable: catelist 1f637b67e48e0896aae520061797ddd2.php 第 25 行.
+[ 2011-04-12T16:46:21+08:00 ] SQL: SHOW COLUMNS FROM fl_article [ RunTime:0.126388s ]
+[ 2011-04-12T16:46:21+08:00 ] SQL: SHOW COLUMNS FROM fl_category [ RunTime:0.068865s ]
+[ 2011-04-12T16:46:21+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.034163s ]
+[ 2011-04-12T16:46:21+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 LIMIT 1  [ RunTime:0.035019s ]
+[ 2011-04-12T16:46:21+08:00 ] SQL: SELECT article.id AS id,article.title AS title,article.create_time AS create_time,category.name AS category_name,user.name AS name FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 ORDER BY article.id desc LIMIT 0,8  [ RunTime:0.001222s ]
+[ 2011-04-12T16:46:21+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() IndexAction.class.php 第 22 行.
+[ 2011-04-12T16:46:21+08:00 ] NOTIC: [8] Undefined variable: catelist 1f637b67e48e0896aae520061797ddd2.php 第 25 行.
+[ 2011-04-12T16:46:27+08:00 ] SQL: SHOW COLUMNS FROM fl_article [ RunTime:0.100664s ]
+[ 2011-04-12T16:46:27+08:00 ] SQL: SHOW COLUMNS FROM fl_category [ RunTime:0.037310s ]
+[ 2011-04-12T16:46:27+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.029647s ]
+[ 2011-04-12T16:46:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 LIMIT 1  [ RunTime:0.042475s ]
+[ 2011-04-12T16:46:27+08:00 ] SQL: SELECT article.id AS id,article.title AS title,article.create_time AS create_time,category.name AS category_name,user.name AS name FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 ORDER BY article.id desc LIMIT 0,8  [ RunTime:0.001012s ]
+[ 2011-04-12T16:46:27+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() IndexAction.class.php 第 22 行.
+[ 2011-04-12T16:46:27+08:00 ] NOTIC: [8] Undefined variable: catelist 1f637b67e48e0896aae520061797ddd2.php 第 25 行.
+[ 2011-04-12T16:46:37+08:00 ] ERR: (ThinkException) 非法操作loginout
+[ 2011-04-12T16:46:47+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.212116s ]
+[ 2011-04-12T16:46:47+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `userid` = 'admin' ) AND ( `password` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1  [ RunTime:0.120843s ]
+[ 2011-04-12T16:46:49+08:00 ] SQL: SHOW COLUMNS FROM fl_article [ RunTime:0.090810s ]
+[ 2011-04-12T16:46:49+08:00 ] SQL: SHOW COLUMNS FROM fl_category [ RunTime:0.035636s ]
+[ 2011-04-12T16:46:49+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.035002s ]
+[ 2011-04-12T16:46:49+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 LIMIT 1  [ RunTime:0.037952s ]
+[ 2011-04-12T16:46:49+08:00 ] SQL: SELECT article.id AS id,article.title AS title,article.create_time AS create_time,category.name AS category_name,user.name AS name FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 ORDER BY article.id desc LIMIT 0,8  [ RunTime:0.000937s ]
+[ 2011-04-12T16:46:49+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() IndexAction.class.php 第 22 行.
+[ 2011-04-12T16:46:49+08:00 ] NOTIC: [8] Undefined variable: catelist 1f637b67e48e0896aae520061797ddd2.php 第 25 行.
+[ 2011-04-12T16:46:53+08:00 ] ERR: (ThinkException) 非法操作loginout
+[ 2011-04-12T16:47:11+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.133358s ]
+[ 2011-04-12T16:47:11+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `userid` = 'liyichao' ) AND ( `password` = '4297f44b13955235245b2497399d7a93' ) LIMIT 1  [ RunTime:0.034094s ]
+[ 2011-04-12T17:13:04+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.111776s ]
+[ 2011-04-12T17:13:04+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `userid` = 'admin' ) AND ( `password` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1  [ RunTime:0.034983s ]
+[ 2011-04-12T17:13:06+08:00 ] SQL: SHOW COLUMNS FROM fl_article [ RunTime:0.158986s ]
+[ 2011-04-12T17:13:06+08:00 ] SQL: SHOW COLUMNS FROM fl_category [ RunTime:0.025046s ]
+[ 2011-04-12T17:13:06+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.022551s ]
+[ 2011-04-12T17:13:06+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 LIMIT 1  [ RunTime:0.034550s ]
+[ 2011-04-12T17:13:06+08:00 ] SQL: SELECT article.id AS id,article.title AS title,article.create_time AS create_time,category.name AS category_name,user.name AS name FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 ORDER BY article.id desc LIMIT 0,8  [ RunTime:0.001005s ]
+[ 2011-04-12T17:13:06+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() IndexAction.class.php 第 22 行.
+[ 2011-04-12T17:13:06+08:00 ] NOTIC: [8] Undefined variable: catelist 1f637b67e48e0896aae520061797ddd2.php 第 25 行.
+[ 2011-04-12T17:13:09+08:00 ] SQL: SHOW COLUMNS FROM fl_article [ RunTime:0.070693s ]
+[ 2011-04-12T17:13:09+08:00 ] SQL: SHOW COLUMNS FROM fl_category [ RunTime:0.024214s ]
+[ 2011-04-12T17:13:09+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.018742s ]
+[ 2011-04-12T17:13:09+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 LIMIT 1  [ RunTime:0.048084s ]
+[ 2011-04-12T17:13:09+08:00 ] SQL: SELECT article.id AS id,article.title AS title,article.create_time AS create_time,category.name AS category_name,user.name AS name FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 ORDER BY article.id desc LIMIT 0,8  [ RunTime:0.001078s ]
+[ 2011-04-12T17:13:09+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() IndexAction.class.php 第 22 行.
+[ 2011-04-12T17:13:09+08:00 ] NOTIC: [8] Undefined variable: catelist 1f637b67e48e0896aae520061797ddd2.php 第 25 行.
+[ 2011-04-12T17:14:41+08:00 ] SQL: SHOW COLUMNS FROM fl_article [ RunTime:0.198873s ]
+[ 2011-04-12T17:14:42+08:00 ] SQL: SHOW COLUMNS FROM fl_category [ RunTime:0.061638s ]
+[ 2011-04-12T17:14:42+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.188433s ]
+[ 2011-04-12T17:14:42+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 LIMIT 1  [ RunTime:0.041116s ]
+[ 2011-04-12T17:14:42+08:00 ] SQL: SELECT article.id AS id,article.title AS title,article.create_time AS create_time,category.name AS category_name,user.name AS name FROM fl_article article  JOIN fl_category category ON article.cid=category.id  JOIN fl_user user ON article.uid=user.id WHERE status=1 ORDER BY article.id desc LIMIT 0,8  [ RunTime:0.001163s ]
+[ 2011-04-12T17:14:42+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() IndexAction.class.php 第 22 行.
+[ 2011-04-12T17:14:42+08:00 ] NOTIC: [8] Undefined variable: catelist 1f637b67e48e0896aae520061797ddd2.php 第 25 行.
+[ 2011-04-12T17:15:30+08:00 ] NOTIC: [8] Undefined variable: catelist 1f637b67e48e0896aae520061797ddd2.php 第 25 行.
+[ 2011-04-12T17:15:30+08:00 ] NOTIC: [8] Undefined variable: list 1f637b67e48e0896aae520061797ddd2.php 第 44 行.
+[ 2011-04-12T17:15:30+08:00 ] NOTIC: [8] Undefined variable: page 1f637b67e48e0896aae520061797ddd2.php 第 52 行.
+[ 2011-04-12T17:15:48+08:00 ] NOTIC: [8] Undefined index:  UserName 1f637b67e48e0896aae520061797ddd2.php 第 28 行.
+[ 2011-04-12T17:15:48+08:00 ] NOTIC: [8] Undefined variable: list 1f637b67e48e0896aae520061797ddd2.php 第 40 行.
+[ 2011-04-12T17:15:48+08:00 ] NOTIC: [8] Undefined variable: page 1f637b67e48e0896aae520061797ddd2.php 第 50 行.
+[ 2011-04-12T17:17:03+08:00 ] NOTIC: [8] Undefined index:  UserName 1f637b67e48e0896aae520061797ddd2.php 第 28 行.
+[ 2011-04-12T17:17:03+08:00 ] NOTIC: [8] Undefined variable: list 1f637b67e48e0896aae520061797ddd2.php 第 40 行.
+[ 2011-04-12T17:17:03+08:00 ] NOTIC: [8] Undefined variable: page 1f637b67e48e0896aae520061797ddd2.php 第 50 行.
+[ 2011-04-12T17:17:25+08:00 ] NOTIC: [8] Undefined index:  UserName 1f637b67e48e0896aae520061797ddd2.php 第 28 行.
+[ 2011-04-12T17:17:25+08:00 ] NOTIC: [8] Undefined variable: list 1f637b67e48e0896aae520061797ddd2.php 第 40 行.
+[ 2011-04-12T17:17:25+08:00 ] NOTIC: [8] Undefined variable: page 1f637b67e48e0896aae520061797ddd2.php 第 50 行.

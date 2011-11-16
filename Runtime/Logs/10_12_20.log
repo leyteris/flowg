@@ -1,0 +1,1025 @@
+[ 2010-12-20T16:30:57+08:00 ] NOTIC: [8] Undefined index:  rememberme GlobalAction.class.php 第 91 行.
+[ 2010-12-20T16:30:58+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.093057s ]
+[ 2010-12-20T16:30:58+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `userid` = 'admin' ) AND ( `password` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1  [ RunTime:0.044088s ]
+[ 2010-12-20T16:30:58+08:00 ] SQL: UPDATE `fl_user` SET `login_time`=1292833858,`login_ip`='127.0.0.1' WHERE id=1 [ RunTime:0.110527s ]
+[ 2010-12-20T16:30:58+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.060459s ]
+[ 2010-12-20T16:30:58+08:00 ] SQL: SELECT * FROM `fl_user` WHERE userid='admin' LIMIT 1  [ RunTime:0.049123s ]
+[ 2010-12-20T16:30:58+08:00 ] SQL: SELECT * FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000331s ]
+[ 2010-12-20T16:30:59+08:00 ] SQL: SHOW COLUMNS FROM fl_follow [ RunTime:0.679968s ]
+[ 2010-12-20T16:30:59+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 81 行.
+[ 2010-12-20T16:30:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid= LIMIT 1  [ RunTime:0.305995s ]
+[ 2010-12-20T16:30:59+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 82 行.
+[ 2010-12-20T16:30:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid= LIMIT 1  [ RunTime:0.000194s ]
+[ 2010-12-20T16:30:59+08:00 ] SQL: SHOW COLUMNS FROM fl_news [ RunTime:0.085562s ]
+[ 2010-12-20T16:30:59+08:00 ] SQL: SELECT * FROM `fl_news` ORDER BY id desc LIMIT 6  [ RunTime:0.038972s ]
+[ 2010-12-20T16:30:59+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.183673s ]
+[ 2010-12-20T16:30:59+08:00 ] SQL: SELECT id,uid,count(id) as num FROM `fl_topic` GROUP BY userid ORDER BY num desc LIMIT 8  [ RunTime:0.058655s ]
+[ 2010-12-20T16:31:00+08:00 ] SQL: SHOW COLUMNS FROM fl_tag [ RunTime:0.410942s ]
+[ 2010-12-20T16:31:00+08:00 ] SQL: SELECT id,tagid,count(id) as count FROM `fl_topic` WHERE tagid>0 GROUP BY tagid ORDER BY count desc LIMIT 20  [ RunTime:0.675144s ]
+[ 2010-12-20T16:31:00+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='4' LIMIT 1  [ RunTime:0.000494s ]
+[ 2010-12-20T16:31:00+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='1' LIMIT 1  [ RunTime:0.000255s ]
+[ 2010-12-20T16:31:00+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='2' LIMIT 1  [ RunTime:0.000496s ]
+[ 2010-12-20T16:31:00+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='3' LIMIT 1  [ RunTime:0.000300s ]
+[ 2010-12-20T16:31:00+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='5' LIMIT 1  [ RunTime:0.000413s ]
+[ 2010-12-20T16:31:00+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='6' LIMIT 1  [ RunTime:0.000264s ]
+[ 2010-12-20T16:31:00+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='7' LIMIT 1  [ RunTime:0.000224s ]
+[ 2010-12-20T16:31:00+08:00 ] SQL: SELECT *,count(id) as num FROM `fl_follow` GROUP BY objuid ORDER BY num desc LIMIT 8  [ RunTime:0.000380s ]
+[ 2010-12-20T16:31:00+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE ( `rootid` = 0 ) AND ( `status` = 1 ) AND ( `type` = 'first' ) ORDER BY id desc LIMIT 64  [ RunTime:0.001360s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=94 LIMIT 1  [ RunTime:0.000571s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='3' LIMIT 1  [ RunTime:0.000268s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=93 LIMIT 1  [ RunTime:0.000394s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='2' LIMIT 1  [ RunTime:0.000243s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=92 LIMIT 1  [ RunTime:0.000612s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000279s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=91 LIMIT 1  [ RunTime:0.000337s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000342s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=90 LIMIT 1  [ RunTime:0.000366s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000128s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=89 LIMIT 1  [ RunTime:0.000313s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000130s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=88 LIMIT 1  [ RunTime:0.000328s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000130s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=87 LIMIT 1  [ RunTime:0.000353s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000254s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=86 LIMIT 1  [ RunTime:0.001041s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000236s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=85 LIMIT 1  [ RunTime:0.000429s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000132s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=84 LIMIT 1  [ RunTime:0.000334s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000128s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=83 LIMIT 1  [ RunTime:0.000313s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000128s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=82 LIMIT 1  [ RunTime:0.000338s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000166s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=81 LIMIT 1  [ RunTime:0.001876s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000207s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=80 LIMIT 1  [ RunTime:0.000401s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000309s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=79 LIMIT 1  [ RunTime:0.000366s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000127s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=78 LIMIT 1  [ RunTime:0.000321s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000133s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=77 LIMIT 1  [ RunTime:0.000438s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000131s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=76 LIMIT 1  [ RunTime:0.000334s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000127s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=75 LIMIT 1  [ RunTime:0.000318s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000192s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=74 LIMIT 1  [ RunTime:0.000747s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000149s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=73 LIMIT 1  [ RunTime:0.000431s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000178s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=72 LIMIT 1  [ RunTime:0.000484s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000158s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=71 LIMIT 1  [ RunTime:0.000342s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000200s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=70 LIMIT 1  [ RunTime:0.000340s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000156s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=69 LIMIT 1  [ RunTime:0.000335s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000139s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=68 LIMIT 1  [ RunTime:0.000336s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000121s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=67 LIMIT 1  [ RunTime:0.000351s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000122s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=66 LIMIT 1  [ RunTime:0.000350s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000124s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=65 LIMIT 1  [ RunTime:0.000345s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000121s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=64 LIMIT 1  [ RunTime:0.000405s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000129s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=63 LIMIT 1  [ RunTime:0.000343s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000155s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=62 LIMIT 1  [ RunTime:0.000340s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000164s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=61 LIMIT 1  [ RunTime:0.000337s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000151s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=60 LIMIT 1  [ RunTime:0.000373s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000123s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=59 LIMIT 1  [ RunTime:0.001197s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000346s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=58 LIMIT 1  [ RunTime:0.000549s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000798s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=57 LIMIT 1  [ RunTime:0.000678s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000169s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=56 LIMIT 1  [ RunTime:0.000534s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000222s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=55 LIMIT 1  [ RunTime:0.000524s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000151s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=54 LIMIT 1  [ RunTime:0.000377s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000134s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=53 LIMIT 1  [ RunTime:0.000319s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000135s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=52 LIMIT 1  [ RunTime:0.000332s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000125s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=51 LIMIT 1  [ RunTime:0.000319s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000126s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=50 LIMIT 1  [ RunTime:0.000309s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000120s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=49 LIMIT 1  [ RunTime:0.000318s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000119s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=48 LIMIT 1  [ RunTime:0.000336s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000124s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=47 LIMIT 1  [ RunTime:0.000530s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000210s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=46 LIMIT 1  [ RunTime:0.000424s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000156s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=45 LIMIT 1  [ RunTime:0.000437s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000156s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=44 LIMIT 1  [ RunTime:0.000827s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000351s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=43 LIMIT 1  [ RunTime:0.000468s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000137s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=42 LIMIT 1  [ RunTime:0.000447s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000126s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=41 LIMIT 1  [ RunTime:0.000330s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000129s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=40 LIMIT 1  [ RunTime:0.000345s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000130s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=34 LIMIT 1  [ RunTime:0.000397s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000258s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=33 LIMIT 1  [ RunTime:0.000444s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000128s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=32 LIMIT 1  [ RunTime:0.000378s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000125s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=31 LIMIT 1  [ RunTime:0.000346s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000124s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=30 LIMIT 1  [ RunTime:0.000370s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000151s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=28 LIMIT 1  [ RunTime:0.000480s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000147s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=27 LIMIT 1  [ RunTime:0.000797s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000206s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=26 LIMIT 1  [ RunTime:0.000756s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000219s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=25 LIMIT 1  [ RunTime:0.000553s ]
+[ 2010-12-20T16:31:01+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000313s ]
+[ 2010-12-20T16:31:01+08:00 ] NOTIC: [8] Undefined variable: topiccount 101e51ccf1bba3bb0d0dc49c0a4c6abf.php 第 82 行.
+[ 2010-12-20T16:31:03+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T20:25:54+08:00 ] NOTIC: [8] Undefined index:  rememberme GlobalAction.class.php 第 91 行.
+[ 2010-12-20T20:25:56+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.313747s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `userid` = 'admin' ) AND ( `password` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1  [ RunTime:0.181095s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: UPDATE `fl_user` SET `login_time`=1292847957,`login_ip`='127.0.0.1' WHERE id=1 [ RunTime:0.143913s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.011924s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT * FROM `fl_user` WHERE userid='admin' LIMIT 1  [ RunTime:0.013952s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT * FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.001044s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SHOW COLUMNS FROM fl_follow [ RunTime:0.026124s ]
+[ 2010-12-20T20:25:57+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 81 行.
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid= LIMIT 1  [ RunTime:0.050271s ]
+[ 2010-12-20T20:25:57+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 82 行.
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid= LIMIT 1  [ RunTime:0.000259s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SHOW COLUMNS FROM fl_news [ RunTime:0.030599s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT * FROM `fl_news` ORDER BY id desc LIMIT 6  [ RunTime:0.008734s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.017043s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT id,uid,count(id) as num FROM `fl_topic` GROUP BY userid ORDER BY num desc LIMIT 8  [ RunTime:0.166662s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SHOW COLUMNS FROM fl_tag [ RunTime:0.023751s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT id,tagid,count(id) as count FROM `fl_topic` WHERE tagid>0 GROUP BY tagid ORDER BY count desc LIMIT 20  [ RunTime:0.008601s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='4' LIMIT 1  [ RunTime:0.000169s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='1' LIMIT 1  [ RunTime:0.000132s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='2' LIMIT 1  [ RunTime:0.000279s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='3' LIMIT 1  [ RunTime:0.000149s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='5' LIMIT 1  [ RunTime:0.000138s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='6' LIMIT 1  [ RunTime:0.000147s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='7' LIMIT 1  [ RunTime:0.000138s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT *,count(id) as num FROM `fl_follow` GROUP BY objuid ORDER BY num desc LIMIT 8  [ RunTime:0.000237s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE ( `rootid` = 0 ) AND ( `status` = 1 ) AND ( `type` = 'first' ) ORDER BY id desc LIMIT 64  [ RunTime:0.000228s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=94 LIMIT 1  [ RunTime:0.011180s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='3' LIMIT 1  [ RunTime:0.000355s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=93 LIMIT 1  [ RunTime:0.000189s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='2' LIMIT 1  [ RunTime:0.000282s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=92 LIMIT 1  [ RunTime:0.000162s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000462s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=91 LIMIT 1  [ RunTime:0.000398s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000133s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=90 LIMIT 1  [ RunTime:0.000154s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000120s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=89 LIMIT 1  [ RunTime:0.000131s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000116s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=88 LIMIT 1  [ RunTime:0.000152s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000202s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=87 LIMIT 1  [ RunTime:0.000204s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000170s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=86 LIMIT 1  [ RunTime:0.000314s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000177s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=85 LIMIT 1  [ RunTime:0.000153s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000120s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=84 LIMIT 1  [ RunTime:0.000199s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000182s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=83 LIMIT 1  [ RunTime:0.000218s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000168s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=82 LIMIT 1  [ RunTime:0.000224s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000184s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=81 LIMIT 1  [ RunTime:0.000380s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000145s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=80 LIMIT 1  [ RunTime:0.000143s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000178s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=79 LIMIT 1  [ RunTime:0.000189s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000145s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=78 LIMIT 1  [ RunTime:0.000256s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000162s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=77 LIMIT 1  [ RunTime:0.000134s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000117s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=76 LIMIT 1  [ RunTime:0.000353s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000142s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=75 LIMIT 1  [ RunTime:0.000158s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000173s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=74 LIMIT 1  [ RunTime:0.000304s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000300s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=73 LIMIT 1  [ RunTime:0.000481s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000493s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=72 LIMIT 1  [ RunTime:0.000205s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000170s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=71 LIMIT 1  [ RunTime:0.000149s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000133s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=70 LIMIT 1  [ RunTime:0.000132s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000119s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=69 LIMIT 1  [ RunTime:0.000136s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000119s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=68 LIMIT 1  [ RunTime:0.000171s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000150s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=67 LIMIT 1  [ RunTime:0.000220s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000138s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=66 LIMIT 1  [ RunTime:0.000134s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000351s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=65 LIMIT 1  [ RunTime:0.000142s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000144s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=64 LIMIT 1  [ RunTime:0.000147s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000121s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=63 LIMIT 1  [ RunTime:0.000131s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000119s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=62 LIMIT 1  [ RunTime:0.000129s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000124s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=61 LIMIT 1  [ RunTime:0.000130s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000118s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=60 LIMIT 1  [ RunTime:0.000140s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000128s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=59 LIMIT 1  [ RunTime:0.000130s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000127s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=58 LIMIT 1  [ RunTime:0.000128s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000124s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=57 LIMIT 1  [ RunTime:0.000129s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000119s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=56 LIMIT 1  [ RunTime:0.000131s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000209s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=55 LIMIT 1  [ RunTime:0.000217s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000136s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=54 LIMIT 1  [ RunTime:0.000130s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000159s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=53 LIMIT 1  [ RunTime:0.000136s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000118s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=52 LIMIT 1  [ RunTime:0.000235s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000125s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=51 LIMIT 1  [ RunTime:0.000128s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000145s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=50 LIMIT 1  [ RunTime:0.000131s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000119s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=49 LIMIT 1  [ RunTime:0.000131s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000119s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=48 LIMIT 1  [ RunTime:0.000152s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000197s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=47 LIMIT 1  [ RunTime:0.000185s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000180s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=46 LIMIT 1  [ RunTime:0.000958s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000315s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=45 LIMIT 1  [ RunTime:0.000263s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000147s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=44 LIMIT 1  [ RunTime:0.000185s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000151s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=43 LIMIT 1  [ RunTime:0.000127s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000118s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=42 LIMIT 1  [ RunTime:0.000213s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000262s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=41 LIMIT 1  [ RunTime:0.000183s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000146s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=40 LIMIT 1  [ RunTime:0.000207s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000123s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=34 LIMIT 1  [ RunTime:0.000128s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000115s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=33 LIMIT 1  [ RunTime:0.000123s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000202s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=32 LIMIT 1  [ RunTime:0.000344s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000237s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=31 LIMIT 1  [ RunTime:0.000286s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000152s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=30 LIMIT 1  [ RunTime:0.000135s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000124s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=28 LIMIT 1  [ RunTime:0.000119s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000116s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=27 LIMIT 1  [ RunTime:0.000129s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000116s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=26 LIMIT 1  [ RunTime:0.000146s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000114s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=25 LIMIT 1  [ RunTime:0.000118s ]
+[ 2010-12-20T20:25:57+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000141s ]
+[ 2010-12-20T20:25:58+08:00 ] NOTIC: [8] Undefined variable: topiccount 101e51ccf1bba3bb0d0dc49c0a4c6abf.php 第 82 行.
+[ 2010-12-20T20:26:01+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T20:26:05+08:00 ] ERR: (ThinkException) Action:myvisit您所请求的方法不存在！
+[ 2010-12-20T20:27:14+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.074899s ]
+[ 2010-12-20T20:27:14+08:00 ] SQL: SELECT * FROM `fl_user` WHERE userid='admin' LIMIT 1  [ RunTime:0.009190s ]
+[ 2010-12-20T20:27:14+08:00 ] SQL: SELECT * FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000779s ]
+[ 2010-12-20T20:27:14+08:00 ] SQL: SHOW COLUMNS FROM fl_follow [ RunTime:0.007169s ]
+[ 2010-12-20T20:27:14+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 81 行.
+[ 2010-12-20T20:27:14+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid= LIMIT 1  [ RunTime:0.007429s ]
+[ 2010-12-20T20:27:14+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 82 行.
+[ 2010-12-20T20:27:14+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid= LIMIT 1  [ RunTime:0.000240s ]
+[ 2010-12-20T20:27:14+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `homepage` = 'Admin' ) LIMIT 1  [ RunTime:0.000347s ]
+[ 2010-12-20T20:27:14+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid=1 LIMIT 1  [ RunTime:0.000178s ]
+[ 2010-12-20T20:27:14+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid=1 LIMIT 1  [ RunTime:0.000142s ]
+[ 2010-12-20T20:27:14+08:00 ] NOTIC: [8] Undefined variable: follow EmptyAction.class.php 第 25 行.
+[ 2010-12-20T20:27:14+08:00 ] SQL: SHOW COLUMNS FROM fl_tag [ RunTime:0.006366s ]
+[ 2010-12-20T20:27:14+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE create_user=1 ORDER BY id desc LIMIT 10  [ RunTime:0.011449s ]
+[ 2010-12-20T20:27:14+08:00 ] SQL: SHOW COLUMNS FROM fl_attention [ RunTime:0.070018s ]
+[ 2010-12-20T20:27:14+08:00 ] SQL: SELECT * FROM `fl_attention` WHERE userid=1 LIMIT 20  [ RunTime:0.000694s ]
+[ 2010-12-20T20:27:14+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000565s ]
+[ 2010-12-20T20:27:14+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.008035s ]
+[ 2010-12-20T20:27:15+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE userid=1 and status=1 LIMIT 1  [ RunTime:0.004053s ]
+[ 2010-12-20T20:27:15+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE userid=1 and status=1 ORDER BY id desc LIMIT 0,10  [ RunTime:0.000653s ]
+[ 2010-12-20T20:27:15+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() EmptyAction.class.php 第 38 行.
+[ 2010-12-20T20:27:15+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000228s ]
+[ 2010-12-20T20:27:15+08:00 ] NOTIC: [8] Undefined variable: toptag b3afe083d5c6c838790506a7040aa74e.php 第 87 行.
+[ 2010-12-20T20:27:15+08:00 ] NOTIC: [8] Undefined variable: topiccount b3afe083d5c6c838790506a7040aa74e.php 第 147 行.
+[ 2010-12-20T20:27:16+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T20:44:13+08:00 ] ERR: (ThinkException) Action:myattention您所请求的方法不存在！
+[ 2010-12-20T20:44:51+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.010594s ]
+[ 2010-12-20T20:44:51+08:00 ] SQL: SELECT * FROM `fl_user` WHERE userid='admin' LIMIT 1  [ RunTime:0.010696s ]
+[ 2010-12-20T20:44:51+08:00 ] SQL: SELECT * FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000217s ]
+[ 2010-12-20T20:44:51+08:00 ] SQL: SHOW COLUMNS FROM fl_follow [ RunTime:0.008733s ]
+[ 2010-12-20T20:44:51+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 81 行.
+[ 2010-12-20T20:44:51+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid= LIMIT 1  [ RunTime:0.008724s ]
+[ 2010-12-20T20:44:51+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 82 行.
+[ 2010-12-20T20:44:51+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid= LIMIT 1  [ RunTime:0.000460s ]
+[ 2010-12-20T20:44:51+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `homepage` = 'Admin' ) LIMIT 1  [ RunTime:0.000513s ]
+[ 2010-12-20T20:44:51+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid=1 LIMIT 1  [ RunTime:0.002731s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid=1 LIMIT 1  [ RunTime:0.000239s ]
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined variable: follow EmptyAction.class.php 第 24 行.
+[ 2010-12-20T20:44:52+08:00 ] SQL: SHOW COLUMNS FROM fl_tag [ RunTime:0.008830s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE create_user=1 ORDER BY id desc LIMIT 10  [ RunTime:0.034205s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT * FROM `fl_follow` WHERE uid=1 LIMIT 20  [ RunTime:0.000398s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000690s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.100121s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE uid=1 and status=1 LIMIT 1  [ RunTime:0.085685s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE uid=1 and status=1 ORDER BY id desc LIMIT 0,10  [ RunTime:0.027078s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=92 ORDER BY id desc LIMIT 2  [ RunTime:0.000372s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=92 LIMIT 1  [ RunTime:0.000253s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=91 ORDER BY id desc LIMIT 2  [ RunTime:0.000289s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=91 LIMIT 1  [ RunTime:0.000220s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=90 ORDER BY id desc LIMIT 2  [ RunTime:0.000210s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=90 LIMIT 1  [ RunTime:0.000234s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=89 ORDER BY id desc LIMIT 2  [ RunTime:0.000209s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=89 LIMIT 1  [ RunTime:0.000289s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=88 ORDER BY id desc LIMIT 2  [ RunTime:0.000218s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=88 LIMIT 1  [ RunTime:0.000515s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=87 ORDER BY id desc LIMIT 2  [ RunTime:0.000549s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=87 LIMIT 1  [ RunTime:0.000286s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=86 ORDER BY id desc LIMIT 2  [ RunTime:0.000288s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=86 LIMIT 1  [ RunTime:0.000215s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=85 ORDER BY id desc LIMIT 2  [ RunTime:0.000268s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=85 LIMIT 1  [ RunTime:0.000247s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=84 ORDER BY id desc LIMIT 2  [ RunTime:0.000307s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=84 LIMIT 1  [ RunTime:0.000300s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=83 ORDER BY id desc LIMIT 2  [ RunTime:0.000397s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=83 LIMIT 1  [ RunTime:0.000239s ]
+[ 2010-12-20T20:44:52+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000190s ]
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined variable: toptag b3afe083d5c6c838790506a7040aa74e.php 第 87 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined variable: topiccount b3afe083d5c6c838790506a7040aa74e.php 第 147 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:44:52+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:44:53+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T20:44:59+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.007406s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT * FROM `fl_user` WHERE userid='admin' LIMIT 1  [ RunTime:0.010801s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT * FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000243s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SHOW COLUMNS FROM fl_follow [ RunTime:0.006504s ]
+[ 2010-12-20T20:44:59+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 81 行.
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid= LIMIT 1  [ RunTime:0.009234s ]
+[ 2010-12-20T20:44:59+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 82 行.
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid= LIMIT 1  [ RunTime:0.000236s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SHOW COLUMNS FROM fl_news [ RunTime:0.006428s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT * FROM `fl_news` ORDER BY id desc LIMIT 6  [ RunTime:0.009366s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.006538s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT id,uid,count(id) as num FROM `fl_topic` GROUP BY userid ORDER BY num desc LIMIT 8  [ RunTime:0.007605s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SHOW COLUMNS FROM fl_tag [ RunTime:0.017876s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT id,tagid,count(id) as count FROM `fl_topic` WHERE tagid>0 GROUP BY tagid ORDER BY count desc LIMIT 20  [ RunTime:0.008259s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='4' LIMIT 1  [ RunTime:0.000404s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='1' LIMIT 1  [ RunTime:0.000237s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='2' LIMIT 1  [ RunTime:0.000267s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='3' LIMIT 1  [ RunTime:0.000188s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='5' LIMIT 1  [ RunTime:0.000188s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='6' LIMIT 1  [ RunTime:0.000166s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE id='7' LIMIT 1  [ RunTime:0.000129s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT *,count(id) as num FROM `fl_follow` GROUP BY objuid ORDER BY num desc LIMIT 8  [ RunTime:0.000301s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE ( `rootid` = 0 ) AND ( `status` = 1 ) AND ( `type` = 'first' ) ORDER BY id desc LIMIT 64  [ RunTime:0.000203s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=94 LIMIT 1  [ RunTime:0.000289s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='3' LIMIT 1  [ RunTime:0.000360s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=93 LIMIT 1  [ RunTime:0.000147s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='2' LIMIT 1  [ RunTime:0.000229s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=92 LIMIT 1  [ RunTime:0.000124s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000351s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=91 LIMIT 1  [ RunTime:0.000143s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000109s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=90 LIMIT 1  [ RunTime:0.000122s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000103s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=89 LIMIT 1  [ RunTime:0.000213s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000112s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=88 LIMIT 1  [ RunTime:0.000170s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000108s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=87 LIMIT 1  [ RunTime:0.000125s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000192s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=86 LIMIT 1  [ RunTime:0.000142s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000109s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=85 LIMIT 1  [ RunTime:0.000126s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.001737s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=84 LIMIT 1  [ RunTime:0.000489s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000355s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=83 LIMIT 1  [ RunTime:0.000312s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000212s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=82 LIMIT 1  [ RunTime:0.000284s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000275s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=81 LIMIT 1  [ RunTime:0.000218s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000215s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=80 LIMIT 1  [ RunTime:0.000193s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000156s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=79 LIMIT 1  [ RunTime:0.000160s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000144s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=78 LIMIT 1  [ RunTime:0.000119s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000112s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=77 LIMIT 1  [ RunTime:0.000115s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000104s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=76 LIMIT 1  [ RunTime:0.000123s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000216s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=75 LIMIT 1  [ RunTime:0.000132s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000108s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=74 LIMIT 1  [ RunTime:0.000118s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000137s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=73 LIMIT 1  [ RunTime:0.000144s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000104s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=72 LIMIT 1  [ RunTime:0.000117s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000107s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=71 LIMIT 1  [ RunTime:0.000117s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000122s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=70 LIMIT 1  [ RunTime:0.000257s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000337s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=69 LIMIT 1  [ RunTime:0.000168s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000351s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=68 LIMIT 1  [ RunTime:0.001671s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000286s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=67 LIMIT 1  [ RunTime:0.000134s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000108s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=66 LIMIT 1  [ RunTime:0.000111s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000097s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=65 LIMIT 1  [ RunTime:0.000121s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000098s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=64 LIMIT 1  [ RunTime:0.000109s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000102s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=63 LIMIT 1  [ RunTime:0.000115s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000098s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=62 LIMIT 1  [ RunTime:0.000109s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000138s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=61 LIMIT 1  [ RunTime:0.000244s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000149s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=60 LIMIT 1  [ RunTime:0.000114s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000099s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=59 LIMIT 1  [ RunTime:0.000172s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000104s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=58 LIMIT 1  [ RunTime:0.000108s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000113s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=57 LIMIT 1  [ RunTime:0.000113s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000102s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=56 LIMIT 1  [ RunTime:0.000123s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000109s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=55 LIMIT 1  [ RunTime:0.000112s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000184s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=54 LIMIT 1  [ RunTime:0.000135s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000101s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=53 LIMIT 1  [ RunTime:0.000114s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000097s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=52 LIMIT 1  [ RunTime:0.000106s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000103s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=51 LIMIT 1  [ RunTime:0.000106s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000097s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=50 LIMIT 1  [ RunTime:0.000196s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000177s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=49 LIMIT 1  [ RunTime:0.000223s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000177s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=48 LIMIT 1  [ RunTime:0.000120s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000482s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=47 LIMIT 1  [ RunTime:0.000300s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000136s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=46 LIMIT 1  [ RunTime:0.000123s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000100s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=45 LIMIT 1  [ RunTime:0.000107s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000416s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=44 LIMIT 1  [ RunTime:0.000135s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000121s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=43 LIMIT 1  [ RunTime:0.000109s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000103s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=42 LIMIT 1  [ RunTime:0.000135s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000104s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=41 LIMIT 1  [ RunTime:0.000109s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000112s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=40 LIMIT 1  [ RunTime:0.000109s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000101s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=34 LIMIT 1  [ RunTime:0.000116s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000103s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=33 LIMIT 1  [ RunTime:0.000129s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000126s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=32 LIMIT 1  [ RunTime:0.000109s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000101s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=31 LIMIT 1  [ RunTime:0.000111s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000102s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=30 LIMIT 1  [ RunTime:0.000107s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000114s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=28 LIMIT 1  [ RunTime:0.000106s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000101s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=27 LIMIT 1  [ RunTime:0.000111s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000104s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=26 LIMIT 1  [ RunTime:0.000107s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000106s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE rootid=25 LIMIT 1  [ RunTime:0.000105s ]
+[ 2010-12-20T20:44:59+08:00 ] SQL: SELECT `nickname` FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000103s ]
+[ 2010-12-20T20:44:59+08:00 ] NOTIC: [8] Undefined variable: topiccount 101e51ccf1bba3bb0d0dc49c0a4c6abf.php 第 82 行.
+[ 2010-12-20T20:45:00+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T20:45:11+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T20:48:26+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.009021s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_user` WHERE userid='admin' LIMIT 1  [ RunTime:0.014439s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000310s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SHOW COLUMNS FROM fl_follow [ RunTime:0.010229s ]
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 81 行.
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid= LIMIT 1  [ RunTime:0.015806s ]
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 82 行.
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid= LIMIT 1  [ RunTime:0.000990s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `homepage` = 'Admin' ) LIMIT 1  [ RunTime:0.000725s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid=1 LIMIT 1  [ RunTime:0.000621s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid=1 LIMIT 1  [ RunTime:0.000368s ]
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined variable: follow EmptyAction.class.php 第 24 行.
+[ 2010-12-20T20:48:26+08:00 ] SQL: SHOW COLUMNS FROM fl_tag [ RunTime:0.008981s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE create_user=1 ORDER BY id desc LIMIT 10  [ RunTime:0.009181s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_follow` WHERE uid=1 LIMIT 20  [ RunTime:0.000190s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000141s ]
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined variable: topic EmptyAction.class.php 第 32 行.
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT `nickname` FROM `fl_user` LIMIT 1  [ RunTime:0.000546s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.011185s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE uid=1 and status=1 LIMIT 1  [ RunTime:0.023258s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE uid=1 and status=1 ORDER BY id desc LIMIT 0,10  [ RunTime:0.000223s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=92 ORDER BY id desc LIMIT 2  [ RunTime:0.001936s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=92 LIMIT 1  [ RunTime:0.000749s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=91 ORDER BY id desc LIMIT 2  [ RunTime:0.000345s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=91 LIMIT 1  [ RunTime:0.000326s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=90 ORDER BY id desc LIMIT 2  [ RunTime:0.000218s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=90 LIMIT 1  [ RunTime:0.000208s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=89 ORDER BY id desc LIMIT 2  [ RunTime:0.000241s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=89 LIMIT 1  [ RunTime:0.000191s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=88 ORDER BY id desc LIMIT 2  [ RunTime:0.001307s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=88 LIMIT 1  [ RunTime:0.000285s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=87 ORDER BY id desc LIMIT 2  [ RunTime:0.000240s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=87 LIMIT 1  [ RunTime:0.000596s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=86 ORDER BY id desc LIMIT 2  [ RunTime:0.000314s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=86 LIMIT 1  [ RunTime:0.000229s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=85 ORDER BY id desc LIMIT 2  [ RunTime:0.000324s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=85 LIMIT 1  [ RunTime:0.000261s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=84 ORDER BY id desc LIMIT 2  [ RunTime:0.000285s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=84 LIMIT 1  [ RunTime:0.000339s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=83 ORDER BY id desc LIMIT 2  [ RunTime:0.000228s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=83 LIMIT 1  [ RunTime:0.000185s ]
+[ 2010-12-20T20:48:26+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000565s ]
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined variable: toptag b3afe083d5c6c838790506a7040aa74e.php 第 87 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined variable: topiccount b3afe083d5c6c838790506a7040aa74e.php 第 147 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:48:26+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:48:27+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T20:49:22+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.007153s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_user` WHERE userid='admin' LIMIT 1  [ RunTime:0.006648s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000189s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SHOW COLUMNS FROM fl_follow [ RunTime:0.007126s ]
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 81 行.
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid= LIMIT 1  [ RunTime:0.008603s ]
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 82 行.
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid= LIMIT 1  [ RunTime:0.000150s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `homepage` = 'Admin' ) LIMIT 1  [ RunTime:0.000430s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid=1 LIMIT 1  [ RunTime:0.000338s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid=1 LIMIT 1  [ RunTime:0.000113s ]
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined variable: follow EmptyAction.class.php 第 24 行.
+[ 2010-12-20T20:49:22+08:00 ] SQL: SHOW COLUMNS FROM fl_tag [ RunTime:0.007284s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE create_user=1 ORDER BY id desc LIMIT 10  [ RunTime:0.010675s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_follow` WHERE uid=1 LIMIT 20  [ RunTime:0.000337s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000168s ]
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined variable: topic EmptyAction.class.php 第 32 行.
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT `nickname` FROM `fl_user` LIMIT 1  [ RunTime:0.000282s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.007981s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE uid=1 and status=1 LIMIT 1  [ RunTime:0.009508s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE uid=1 and status=1 ORDER BY id desc LIMIT 0,10  [ RunTime:0.000219s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=92 ORDER BY id desc LIMIT 2  [ RunTime:0.003162s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=92 LIMIT 1  [ RunTime:0.000477s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=91 ORDER BY id desc LIMIT 2  [ RunTime:0.000312s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=91 LIMIT 1  [ RunTime:0.000206s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=90 ORDER BY id desc LIMIT 2  [ RunTime:0.000246s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=90 LIMIT 1  [ RunTime:0.000202s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=89 ORDER BY id desc LIMIT 2  [ RunTime:0.000227s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=89 LIMIT 1  [ RunTime:0.000199s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=88 ORDER BY id desc LIMIT 2  [ RunTime:0.000239s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=88 LIMIT 1  [ RunTime:0.000201s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=87 ORDER BY id desc LIMIT 2  [ RunTime:0.000199s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=87 LIMIT 1  [ RunTime:0.000289s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=86 ORDER BY id desc LIMIT 2  [ RunTime:0.000225s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=86 LIMIT 1  [ RunTime:0.000362s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=85 ORDER BY id desc LIMIT 2  [ RunTime:0.000431s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=85 LIMIT 1  [ RunTime:0.000265s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=84 ORDER BY id desc LIMIT 2  [ RunTime:0.000231s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=84 LIMIT 1  [ RunTime:0.000202s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=83 ORDER BY id desc LIMIT 2  [ RunTime:0.000258s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=83 LIMIT 1  [ RunTime:0.000208s ]
+[ 2010-12-20T20:49:22+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000151s ]
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined variable: toptag b3afe083d5c6c838790506a7040aa74e.php 第 87 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined variable: topiccount b3afe083d5c6c838790506a7040aa74e.php 第 147 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:22+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:23+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T20:49:27+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.007786s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_user` WHERE userid='admin' LIMIT 1  [ RunTime:0.005031s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000322s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SHOW COLUMNS FROM fl_follow [ RunTime:0.007385s ]
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 81 行.
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid= LIMIT 1  [ RunTime:0.008243s ]
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 82 行.
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid= LIMIT 1  [ RunTime:0.000167s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `homepage` = 'Admin' ) LIMIT 1  [ RunTime:0.000346s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid=1 LIMIT 1  [ RunTime:0.000131s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid=1 LIMIT 1  [ RunTime:0.000225s ]
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined variable: follow EmptyAction.class.php 第 24 行.
+[ 2010-12-20T20:49:27+08:00 ] SQL: SHOW COLUMNS FROM fl_tag [ RunTime:0.007202s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE create_user=1 ORDER BY id desc LIMIT 10  [ RunTime:0.008326s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_follow` WHERE uid=1 LIMIT 20  [ RunTime:0.000343s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000117s ]
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined variable: topic EmptyAction.class.php 第 32 行.
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT `nickname` FROM `fl_user` LIMIT 1  [ RunTime:0.000562s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.008626s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE uid=1 and status=1 LIMIT 1  [ RunTime:0.001432s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE uid=1 and status=1 ORDER BY id desc LIMIT 50,10  [ RunTime:0.001764s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=42 ORDER BY id desc LIMIT 2  [ RunTime:0.000429s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=42 LIMIT 1  [ RunTime:0.000332s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=41 ORDER BY id desc LIMIT 2  [ RunTime:0.000291s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=41 LIMIT 1  [ RunTime:0.000538s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=40 ORDER BY id desc LIMIT 2  [ RunTime:0.000253s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=40 LIMIT 1  [ RunTime:0.000207s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=34 ORDER BY id desc LIMIT 2  [ RunTime:0.000170s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=34 LIMIT 1  [ RunTime:0.000180s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=33 ORDER BY id desc LIMIT 2  [ RunTime:0.000221s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=33 LIMIT 1  [ RunTime:0.000164s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=32 ORDER BY id desc LIMIT 2  [ RunTime:0.000173s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=32 LIMIT 1  [ RunTime:0.000160s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=31 ORDER BY id desc LIMIT 2  [ RunTime:0.000189s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=31 LIMIT 1  [ RunTime:0.000296s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=30 ORDER BY id desc LIMIT 2  [ RunTime:0.000232s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=30 LIMIT 1  [ RunTime:0.000695s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE id='2' LIMIT 1  [ RunTime:0.000429s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=2 LIMIT 1  [ RunTime:0.000271s ]
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  title EmptyAction.class.php 第 51 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  userid EmptyAction.class.php 第 52 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  pass EmptyAction.class.php 第 53 行.
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=28 ORDER BY id desc LIMIT 2  [ RunTime:0.000237s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=28 LIMIT 1  [ RunTime:0.000214s ]
+[ 2010-12-20T20:49:27+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000146s ]
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined variable: toptag b3afe083d5c6c838790506a7040aa74e.php 第 87 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined variable: topiccount b3afe083d5c6c838790506a7040aa74e.php 第 147 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:27+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:28+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T20:49:44+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.024235s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_user` WHERE userid='admin' LIMIT 1  [ RunTime:0.007427s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000226s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SHOW COLUMNS FROM fl_follow [ RunTime:0.010635s ]
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 81 行.
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid= LIMIT 1  [ RunTime:0.007681s ]
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 82 行.
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid= LIMIT 1  [ RunTime:0.000169s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `homepage` = 'Admin' ) LIMIT 1  [ RunTime:0.000227s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid=1 LIMIT 1  [ RunTime:0.000664s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid=1 LIMIT 1  [ RunTime:0.000145s ]
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined variable: follow EmptyAction.class.php 第 24 行.
+[ 2010-12-20T20:49:44+08:00 ] SQL: SHOW COLUMNS FROM fl_tag [ RunTime:0.007812s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE create_user=1 ORDER BY id desc LIMIT 10  [ RunTime:0.008559s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_follow` WHERE uid=1 LIMIT 20  [ RunTime:0.000158s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000104s ]
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined variable: topic EmptyAction.class.php 第 32 行.
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT `nickname` FROM `fl_user` LIMIT 1  [ RunTime:0.000217s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.006371s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE uid=1 and status=1 LIMIT 1  [ RunTime:0.005626s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE uid=1 and status=1 ORDER BY id desc LIMIT 40,10  [ RunTime:0.001574s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=52 ORDER BY id desc LIMIT 2  [ RunTime:0.000268s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=52 LIMIT 1  [ RunTime:0.000191s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=51 ORDER BY id desc LIMIT 2  [ RunTime:0.000161s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=51 LIMIT 1  [ RunTime:0.000151s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=50 ORDER BY id desc LIMIT 2  [ RunTime:0.000549s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=50 LIMIT 1  [ RunTime:0.000353s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=49 ORDER BY id desc LIMIT 2  [ RunTime:0.000249s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=49 LIMIT 1  [ RunTime:0.000266s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=48 ORDER BY id desc LIMIT 2  [ RunTime:0.000312s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=48 LIMIT 1  [ RunTime:0.000333s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=47 ORDER BY id desc LIMIT 2  [ RunTime:0.000212s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=47 LIMIT 1  [ RunTime:0.000195s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=46 ORDER BY id desc LIMIT 2  [ RunTime:0.000159s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=46 LIMIT 1  [ RunTime:0.000150s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=45 ORDER BY id desc LIMIT 2  [ RunTime:0.000207s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=45 LIMIT 1  [ RunTime:0.000159s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=44 ORDER BY id desc LIMIT 2  [ RunTime:0.000238s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=44 LIMIT 1  [ RunTime:0.000262s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=43 ORDER BY id desc LIMIT 2  [ RunTime:0.000179s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=43 LIMIT 1  [ RunTime:0.000300s ]
+[ 2010-12-20T20:49:44+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000171s ]
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined variable: toptag b3afe083d5c6c838790506a7040aa74e.php 第 87 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined variable: topiccount b3afe083d5c6c838790506a7040aa74e.php 第 147 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:44+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:44+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T20:49:58+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.007193s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_user` WHERE userid='admin' LIMIT 1  [ RunTime:0.008342s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000141s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SHOW COLUMNS FROM fl_follow [ RunTime:0.006557s ]
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 81 行.
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid= LIMIT 1  [ RunTime:0.008047s ]
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 82 行.
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid= LIMIT 1  [ RunTime:0.000137s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `homepage` = 'Admin' ) LIMIT 1  [ RunTime:0.000345s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid=1 LIMIT 1  [ RunTime:0.000161s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid=1 LIMIT 1  [ RunTime:0.000123s ]
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined variable: follow EmptyAction.class.php 第 24 行.
+[ 2010-12-20T20:49:58+08:00 ] SQL: SHOW COLUMNS FROM fl_tag [ RunTime:0.006663s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE create_user=1 ORDER BY id desc LIMIT 10  [ RunTime:0.007292s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_follow` WHERE uid=1 LIMIT 20  [ RunTime:0.000169s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000118s ]
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined variable: topic EmptyAction.class.php 第 32 行.
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT `nickname` FROM `fl_user` LIMIT 1  [ RunTime:0.000168s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.006973s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE uid=1 and status=1 LIMIT 1  [ RunTime:0.005611s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE uid=1 and status=1 ORDER BY id desc LIMIT 0,10  [ RunTime:0.000235s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=92 ORDER BY id desc LIMIT 2  [ RunTime:0.000270s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=92 LIMIT 1  [ RunTime:0.000310s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=91 ORDER BY id desc LIMIT 2  [ RunTime:0.000462s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=91 LIMIT 1  [ RunTime:0.000885s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=90 ORDER BY id desc LIMIT 2  [ RunTime:0.000464s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=90 LIMIT 1  [ RunTime:0.000251s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=89 ORDER BY id desc LIMIT 2  [ RunTime:0.000219s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=89 LIMIT 1  [ RunTime:0.000572s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=88 ORDER BY id desc LIMIT 2  [ RunTime:0.000500s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=88 LIMIT 1  [ RunTime:0.000321s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=87 ORDER BY id desc LIMIT 2  [ RunTime:0.000322s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=87 LIMIT 1  [ RunTime:0.000183s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=86 ORDER BY id desc LIMIT 2  [ RunTime:0.000176s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=86 LIMIT 1  [ RunTime:0.000274s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=85 ORDER BY id desc LIMIT 2  [ RunTime:0.000193s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=85 LIMIT 1  [ RunTime:0.000220s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=84 ORDER BY id desc LIMIT 2  [ RunTime:0.000230s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=84 LIMIT 1  [ RunTime:0.000171s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=83 ORDER BY id desc LIMIT 2  [ RunTime:0.000353s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=83 LIMIT 1  [ RunTime:0.000291s ]
+[ 2010-12-20T20:49:58+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000124s ]
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined variable: toptag b3afe083d5c6c838790506a7040aa74e.php 第 87 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined variable: topiccount b3afe083d5c6c838790506a7040aa74e.php 第 147 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:49:58+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:49:58+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T20:50:40+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.008333s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_user` WHERE userid='admin' LIMIT 1  [ RunTime:0.010234s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_user` WHERE id='1' LIMIT 1  [ RunTime:0.000436s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SHOW COLUMNS FROM fl_follow [ RunTime:0.010809s ]
+[ 2010-12-20T20:50:40+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 81 行.
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid= LIMIT 1  [ RunTime:0.008228s ]
+[ 2010-12-20T20:50:40+08:00 ] NOTIC: [8] Undefined variable: uid CommonAction.class.php 第 82 行.
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid= LIMIT 1  [ RunTime:0.000151s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `homepage` = 'Admin' ) LIMIT 1  [ RunTime:0.000330s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE objuid=1 LIMIT 1  [ RunTime:0.000107s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_follow` WHERE uid=1 LIMIT 1  [ RunTime:0.000790s ]
+[ 2010-12-20T20:50:40+08:00 ] NOTIC: [8] Undefined variable: follow EmptyAction.class.php 第 24 行.
+[ 2010-12-20T20:50:40+08:00 ] SQL: SHOW COLUMNS FROM fl_tag [ RunTime:0.007178s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_tag` WHERE create_user=1 ORDER BY id desc LIMIT 10  [ RunTime:0.009903s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_follow` WHERE uid=1 LIMIT 20  [ RunTime:0.000141s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000102s ]
+[ 2010-12-20T20:50:40+08:00 ] NOTIC: [8] Undefined variable: topic EmptyAction.class.php 第 32 行.
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT `nickname` FROM `fl_user` LIMIT 1  [ RunTime:0.000175s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.014546s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE uid=1 and status=1 LIMIT 1  [ RunTime:0.005434s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE uid=1 and status=1 ORDER BY id desc LIMIT 0,10  [ RunTime:0.000150s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=92 ORDER BY id desc LIMIT 2  [ RunTime:0.000381s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=92 LIMIT 1  [ RunTime:0.000255s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=91 ORDER BY id desc LIMIT 2  [ RunTime:0.000174s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=91 LIMIT 1  [ RunTime:0.000150s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=90 ORDER BY id desc LIMIT 2  [ RunTime:0.000198s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=90 LIMIT 1  [ RunTime:0.000200s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=89 ORDER BY id desc LIMIT 2  [ RunTime:0.000201s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=89 LIMIT 1  [ RunTime:0.000187s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=88 ORDER BY id desc LIMIT 2  [ RunTime:0.000154s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=88 LIMIT 1  [ RunTime:0.000244s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=87 ORDER BY id desc LIMIT 2  [ RunTime:0.000195s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=87 LIMIT 1  [ RunTime:0.000209s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=86 ORDER BY id desc LIMIT 2  [ RunTime:0.001068s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=86 LIMIT 1  [ RunTime:0.000374s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=85 ORDER BY id desc LIMIT 2  [ RunTime:0.000190s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=85 LIMIT 1  [ RunTime:0.000177s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=84 ORDER BY id desc LIMIT 2  [ RunTime:0.000153s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=84 LIMIT 1  [ RunTime:0.000483s ]
+[ 2010-12-20T20:50:40+08:00 ] SQL: SELECT * FROM `fl_topic` WHERE pid=83 ORDER BY id desc LIMIT 2  [ RunTime:0.001096s ]
+[ 2010-12-20T20:50:41+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `fl_topic` WHERE pid=83 LIMIT 1  [ RunTime:0.000425s ]
+[ 2010-12-20T20:50:41+08:00 ] SQL: SELECT id,userid,nickname FROM `fl_user` WHERE id=1 LIMIT 1  [ RunTime:0.000290s ]
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined variable: toptag b3afe083d5c6c838790506a7040aa74e.php 第 87 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined variable: topiccount b3afe083d5c6c838790506a7040aa74e.php 第 147 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  nickname b3afe083d5c6c838790506a7040aa74e.php 第 166 行.
+[ 2010-12-20T20:50:41+08:00 ] NOTIC: [8] Undefined index:  topiccreate_time b3afe083d5c6c838790506a7040aa74e.php 第 171 行.
+[ 2010-12-20T20:50:41+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T20:51:25+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T20:54:53+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T20:58:32+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:04:54+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:06:29+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:07:00+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:07:16+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:08:29+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:08:34+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:08:38+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:08:42+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:15:54+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:17:26+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:17:48+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T21:18:48+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T21:21:09+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:21:48+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:21:58+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:22:14+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:22:42+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:22:57+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:23:03+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:23:12+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T21:23:50+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:24:18+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:28:03+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:29:57+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T21:32:01+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T21:32:39+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T21:32:42+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T21:32:56+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T21:35:37+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T21:36:29+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T21:37:34+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:37:44+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:39:02+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:39:37+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:40:18+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:41:00+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:41:47+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:41:49+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:41:55+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:42:03+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:42:08+08:00 ] ERR: (ThinkException) 模板不存在[D:/wamp/www/Tflowg/Tpl/default/Public/success.html]
+[ 2010-12-20T21:42:15+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:43:25+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:43:28+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:43:28+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:57:36+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:57:56+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:58:03+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:58:09+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:58:25+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T21:59:47+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T22:00:07+08:00 ] ERR: (ThinkException) 非法操作transmit
+[ 2010-12-20T22:00:09+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T22:02:43+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T22:04:05+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T22:04:50+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T22:05:21+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T22:06:18+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T22:07:03+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T22:07:08+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T22:07:19+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T22:08:43+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T22:09:55+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T22:10:46+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T22:13:20+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T22:13:29+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T22:13:31+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T22:13:34+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T22:13:35+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T22:13:38+08:00 ] ERR: (ThinkException) 非法操作50.jpg
+[ 2010-12-20T22:13:39+08:00 ] ERR: (ThinkException) 非法操作120.jpg
+[ 2010-12-20T22:13:43+08:00 ] ERR: (ThinkException) 非法操作50.jpg

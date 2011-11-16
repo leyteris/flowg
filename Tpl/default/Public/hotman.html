@@ -1,0 +1,17 @@
+			<div class="r-pro knowuser">
+            	<h1>热门人物</h1>
+                <ul>
+                <volist name="hotman" id="vo">
+                	<li>
+                    	<div class="knowuser-pic">
+                        	<a href="{$webpath}{$vo.homepage}" title="{$vo.nickname}"><img src="{:getUserAvatar($vo['avatar'],50)}"/></a>
+                        </div>
+                        <div class="knowuser-info">
+                        	<p><a title="{$vo.nickname}" href="{$webpath}{$vo.homepage}">{$vo.nickname}</a></p>
+                            <p><a href="{:U('ajax/ajaxFollow')}?objuid={$vo.id}" class="followta" title="关注">+加关注</a></p>
+                        </div>
+                    </li>
+                </volist>
+                </ul>
+                <span class="right"><a href="{:U('hall/index')}">更多>></a></span>
+            </div>

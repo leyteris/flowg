@@ -1,0 +1,14 @@
+    		<div class="userinfo">
+            	<ul class="userdetail">	
+                	<li class="usertitle">{$rs.nickname}的资料</li>
+                    <li>
+                    	<if condition= "$rs.sex eq '0'">
+					 		女
+						<else /> 
+							男
+						</if> 
+					</li>
+                    <li>地址:{$rs.address|default='太阳系 火星'}</li>
+                    <li>个人主页：{$rs.personalpage|default='无'}</li>
+                </ul>    
+        	</div>

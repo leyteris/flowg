@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+body{
+	background:#000 url(../images/wrapBg.jpg) no-repeat;
+	background-position:center top ;
+	text-align: center;
+	color:#666;
+}
+.blogbody {
+	overflow:hidden;
+	border-bottom-left-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+}
+.blogbody .right-nav {
+	background:#33456A;
+	border-left:solid 1px #CCC;
+	color:#F2A434;
+}
+.blogbody .right-nav a{
+	color:#9CCAEA;
+}
+.blogbody .right-nav li span a,.right-nav .userinfo .userdetail li.usertitle{
+	color:#F2A434;
+}
+.blogbody .right-nav li span.num a{
+	color:#9CCAEA;
+}
+.top-toolbar-div span a{
+	color:#FFF;
+}
+.header-menu a{
+	color:#FFF;
+	font-height:18px;
+}
+.right-nav .hotht li a{
+	color:#9CCAEA;
+}
+.right-nav .r-pro li,.right-nav .r-pro p{
+	color:#9CCAEA;
+}
+.userinfo em{
+	color:#9CCAEA;
+}
+.top-toolbar .top-toolbar-bg{
+	filter:alpha(opacity=10); /*IE滤镜，透明度30%*/
+	-moz-opacity:0.1; /*Firefox私有，透明度30%*/
+	opacity:0.1;
+}
+.header-menu .header-menu-bg{
+	filter:alpha(opacity=30); /*IE滤镜，透明度50%*/
+	-moz-opacity:0.3; /*Firefox私有，透明度50%*/
+	opacity:0.3
+}
+	

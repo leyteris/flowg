@@ -1,0 +1,33 @@
+<include file="Public:header" />
+    <div class="blogbody">
+    	<include file="Index:right" />
+        <div class="left-nav">
+            <div class="msglistbox">
+                <ul id="msglistmenu">
+                	<li><a href="{:U('hall/index')}">热门人物</a></li>
+                	<li><a href="{:U('hall/hottopic')}">热门微博</a></li>
+                	<li><a href="{:U('hall/hottag')}">热门话题</a></li>
+                	<li><a href="{:U('hall/topickong')}">纯微博控</a></li>
+                </ul>
+                <ul id="followlist">
+                	<volist name="list" id="vo">
+                    <li class="listbody">
+                    	<div class="userpic">
+                        	<a href="{$webpath}{$vo.homepage}"><img alt="{$vo.nickname}" src="{:getUserAvatar($vo['avatar'],50)}" /></a>
+                        </div>
+                        <div class="listbodyright">
+                            <a class="username" href="{$webpath}{$vo.homepage}">{$vo.nickname}</a>
+                            <div class="clear">最近发布微博于   {$vo.lasttopic.create_time} 来自{$vo.lasttopic.from}</div>
+							<div class="usermsg">{$vo.lasttopic.content}</div>
+							<div class="detailbody">
+								<span><a href="{$webpath}{$vo.homepage}">发布微博<em>{$vo.count|default="0"}</em>条</a></span>
+                            </div>
+							<div><a class="followta" href="{:U('ajax/ajaxFollow')}?objuid={$vo.id}">关注TA</a></div>
+                        </div>
+                    </li>
+                </volist>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

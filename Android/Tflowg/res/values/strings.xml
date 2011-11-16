@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ActivityMain!</string>
+    <string name="app_name">Flowg微博</string>
+    <string name="account">账号：</string>
+    <string name="password">密码：</string>
+    <string name="login">登陆</string>
+    <string name="register">注册</string>
+    <string name="rememberme">是否保存密码？</string>
+    <string name="registertext">没有Flowg微博账号？</string>    
+    <string name="topiclist.index">首页</string>
+    <string name="topiclist.mention">关于我的</string>
+    <string name="topiclist.update">撰写</string>
+    <string name="topiclist.about">关于</string>
+</resources>

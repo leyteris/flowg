@@ -1,0 +1,33 @@
+<include file="Public:header" />
+        <div id="wrapper">
+        	<div id="maintitle">
+            	<span id="thistitle">>>编辑用户</span>
+            	<a class="floatright" href="{:U('global/logout')}">注销</a>
+	            <span class="floatright">欢迎您！{@BackUserName}  </span>
+            </div>
+            <div id="main">
+                <form name="form" id="form" action="{:U('user/doSetPass')}" method="post">
+                    <div class="item">
+                        <label for="userid">
+                           	 账号：
+                        </label>
+                        <input type="text" name="userid" id="userid" value="{$u.userid}" class="input" disabled=""/>
+                    </div>
+                    <div class="item">
+                        <label for="password">
+                          	  密码：
+                        </label>
+                        <input type="password" name="password" id="password" class="input" />
+                    </div>
+                    <div class="item">
+                        <label for="repassword">
+                           	 重复密码：
+                        </label>
+                        <input type="password" name="repassword" id="repassword" class="input" />
+                    </div>
+                    <input name="id" type="hidden"  value="{$u.id}"  />
+                    <input type="submit" class="inputneedmar" name="submit" id="submit" value="  提 交  " tabindex="120" />
+                </form>
+            </div>
+        </div>
+<include file="Public:footer" />

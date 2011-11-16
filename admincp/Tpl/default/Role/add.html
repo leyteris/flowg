@@ -1,0 +1,219 @@
+<include file="Public:header" />
+        <div id="wrapper">
+        <if condition= "$isedit neq 1"> 
+        	<div id="maintitle">
+            	<span id="thistitle">>>添加权限</span>
+            	<a class="floatright" href="{:U('global/logout')}">注销</a>
+	            <span class="floatright">欢迎您！{@BackUserName}  </span>
+            </div>
+            <div id="main">
+                <form name="form" id="form" action="{:U('role/doAdd')}" method="post">
+                    <div class="item">
+                        <label for="rolename">
+                            	权限名称：
+                        </label>
+                        <input type="text" name="rolename" id="rolename" class="input" />
+                    </div>
+                    <div class="item">
+                        <label for="user_right">
+                            	用户管理权限：
+                        </label>
+                        <select name="user_right" class="input" id="user_right">
+                        	<option value="0">无</option>
+                            <option value="1">有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="sys_right">
+                            	系统管理权限：
+                        </label>
+                        <select name="sys_right" class="input" id="sys_right">
+                        	<option value="0">无</option>
+                            <option value="1">有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="tag_right">
+                            	话题管理权限：
+                        </label>
+                        <select name="tag_right" class="input" id="tag_right">
+                        	<option value="0">无</option>
+                            <option value="1">有</option>
+                        </select>
+                    </div>
+                   	<div class="item">
+                        <label for="topic_right">
+                            	微博管理权限：
+                        </label>
+                        <select name="topic_right" class="input" id="topic_right">
+                        	<option value="0">无</option>
+                            <option value="1">有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="news_right">
+                            	公告管理权限：
+                        </label>
+                        <select name="news_right" class="input" id="news_right">
+                        	<option value="0">无</option>
+                            <option value="1">有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="style_right">
+                            	皮肤管理权限：
+                        </label>
+                        <select name="style_right" class="input" id="style_right">
+                        	<option value="0">无</option>
+                            <option value="1">有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="del_right">
+                            	删除权限：
+                        </label>
+                        <select name="del_right" class="input" id="del_right">
+                        	<option value="0">无</option>
+                            <option value="1">有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="edit_right">
+                            	编辑权限：
+                        </label>
+                        <select name="edit_right" class="input" id="edit_right">
+                        	<option value="0">无</option>
+                            <option value="1">有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="cre_right">
+                            	创建权限：
+                        </label>
+                        <select name="cre_right" class="input" id="cre_right">
+                        	<option value="0">无</option>
+                            <option value="1">有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="issuper">
+                            	SuperAdmin
+                        </label>
+                        <select name="issuper" class="input" id="issuper">
+                        	<option value="0">否</option>
+                            <option value="1">是</option>
+                        </select>
+                    </div>
+                    <input type="submit" class="inputneedmar" name="submit" id="submit" value="  提 交  " tabindex="120" />
+                </form>
+            <else />
+        	<div id="maintitle">
+            	<span id="thistitle">>>编辑用户</span>
+            	<a class="floatright" href="{:U('global/logout')}">注销</a>
+	            <span class="floatright">欢迎您！{@BackUserName}  </span>
+            </div>
+            <div id="main">
+                <form name="form" id="form" action="{:U('role/doEdit')}" method="post">
+                    <div class="item">
+                        <label for="rolename">
+                            	权限名称：
+                        </label>
+                        <input type="text" name="rolename" id="rolename" class="input" value="{$r.rolename}" />
+                    </div>
+                    <div class="item">
+                        <label for="user_right">
+                            	用户管理权限：
+                        </label>
+                        <select name="user_right" class="input" id="user_right">
+                        	<option value="0">无</option>
+                            <option value="1" <?php if($r["user_right"] == 1): ?>selected=""<?php endif; ?>>有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="sys_right">
+                            	系统管理权限：
+                        </label>
+                        <select name="sys_right" class="input" id="sys_right">
+                        	<option value="0">无</option>
+                            <option value="1" <?php if($r["sys_right"] == 1): ?>selected=""<?php endif; ?>>有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="tag_right">
+                            	话题管理权限：
+                        </label>
+                        <select name="tag_right" class="input" id="tag_right">
+                        	<option value="0">无</option>
+                            <option value="1" <?php if($r["tag_right"] == 1): ?>selected=""<?php endif; ?>>有</option>
+                        </select>
+                    </div>
+                   	<div class="item">
+                        <label for="topic_right">
+                            	微博管理权限：
+                        </label>
+                        <select name="topic_right" class="input" id="topic_right">
+                        	<option value="0">无</option>
+                            <option value="1" <?php if($r["topic_right"] == 1): ?>selected=""<?php endif; ?>>有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="news_right">
+                            	公告管理权限：
+                        </label>
+                        <select name="news_right" class="input" id="news_right">
+                        	<option value="0">无</option>
+                            <option value="1" <?php if($r["news_right"] == 1): ?>selected=""<?php endif; ?>>有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="style_right">
+                            	皮肤管理权限：
+                        </label>
+                        <select name="style_right" class="input" id="style_right">
+                        	<option value="0">无</option>
+                            <option value="1" <?php if($r["style_right"] == 1): ?>selected=""<?php endif; ?>>有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="delright">
+                            	删除权限：
+                        </label>
+                        <select name="delright" class="input" id="delright">
+                        	<option value="0">无</option>
+                            <option value="1" <?php if($r["del_right"] == 1): ?>selected=""<?php endif; ?>>有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="editright">
+                            	编辑权限：
+                        </label>
+                        <select name="editright" class="input" id="editright">
+                        	<option value="0">无</option>
+                            <option value="1" <?php if($r["edit_right"] == 1): ?>selected=""<?php endif; ?>>有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="creright">
+                            	创建权限：
+                        </label>
+                        <select name="creright" class="input" id="creright">
+                        	<option value="0">无</option>
+                            <option value="1" <?php if($r["cre_right"] == 1): ?>selected=""<?php endif; ?>>有</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="issuper">
+                            	superadmin
+                        </label>
+                        <select name="issuper" class="input" id="issuper">
+                        	<option value="0">否</option>
+                            <option value="1"  <?php if($r["issuper"] == 1): ?>selected=""<?php endif; ?>>是</option>
+                        </select>
+                    </div>
+                    <input name="id" type="hidden"  value="{$r.id}"  />
+                    <input type="submit" class="inputneedmar" name="submit" id="submit" value="  提 交  " tabindex="120" />
+                </form>
+              </if>
+            </div>
+        </div>
+<include file="Public:footer" />

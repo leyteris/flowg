@@ -1,0 +1,109 @@
+<include file="Public:header" />
+<style>
+#search-user ul li{
+	display:inline;
+	float:left;
+	margin:10px 25px;
+	overflow:hidden;
+}
+#search-user{
+	border:1px darkGray solid;
+	overflow:hidden;
+	margin:20px;
+	border-radius: 7px;
+}
+.searchuser-pic{
+	float:left;
+	margin:0 10px;
+}
+.searchuser-pic img{
+	border:1px darkGray solid;
+	padding:1px;
+}
+.searchuser-info{
+	float:left;
+}
+#searchLongTxt{
+	width:400px;
+}
+#seaF{
+	text-align:left;
+	margin-left:20px;
+}
+</style>
+    <div class="blogbody">
+    	<include file="Index:right" />
+        <div class="left-nav">
+	        <form id="seaF"method="post" action="/tflowg/search/index.shtml">
+	        	<input type="text" id="searchLongTxt" maxlength="600" name="searchTxt">
+	        	<input type="submit" id="searchLongbtn" value="搜索">
+	        </form>
+	        <div id="search-user">
+	        	<empty name="ulist">无相关搜索用户 <else />
+	        	<ul>
+	                <volist name="ulist" id="vo">
+	                	<li>
+	                    	<div class="searchuser-pic">
+	                        	<a href="{$webpath}{$vo.homepage}" title="{$vo.nickname}"><img src="{:getUserAvatar($vo['avatar'],50)}"/></a>
+	                        </div>
+	                        <div class="searchuser-info">
+	                        	<p><a title="{$vo.nickname}" href="{$webpath}{$vo.homepage}">{$vo.nickname}</a></p>
+	                            <p><a href="{:U('ajax/ajaxFollow')}?objuid={$vo.id}" class="followta" title="关注">+加关注</a></p>
+	                        </div>
+	                    </li>
+	                </volist>
+	        	</ul>
+	        	</empty>
+	        </div>
+        <div class="msglistbox">
+                <ul id="msglistmenu">
+                	<li><a href="{:U('search/index')}">搜索微博</a></li>
+                </ul>
+                <empty name="tlist">无相关搜索微博 <else />
+        		<ul id="talklist">
+                	<volist name="tlist" id="vo">
+                    <li class="listbody"  id="{$vo.id}">
+                    	<div class="userpic">
+                        	<a href="{$webpath}{$vo.homepage}"><img alt="头像" src="{:getUserAvatar($vo['avatar'],120)}" alt="{$vo.nickname}"/></a>
+                        </div>
+                        <div class="listbodyright">
+                            <a class="username" href="{$webpath}/{$vo.homepage}">
+                            	{$vo.nickname}:
+                            </a>
+                            <p class="usermsg">{$vo.content}</p>
+                            <if condition= "$vo.imgid neq 0"> 
+	                            <div class="useruppic">
+	                            	<a class="artZoom" href="{$vo.topicpic.url}" rel="{$vo.topicpic.url}">
+	                            		<img src="{$vo.topicpic.thumb_url}" />
+									</a>
+								</div>
+							</if>
+							<div class="listfooter">
+                            	<div class="listfooterl">
+                                    <span class="listuptime">{$vo.time}</span>
+                                    <span class="listupclt">来自<a href="#">{$vo.from}</a></span>
+									<if condition= "$vo.count neq 0"> 
+                                    	<span><a href="{:U('topic/index')}?tid={$vo.id}" class="replylistbtn">查看转发和评论({$vo.count})</a></span>
+                               		</if>
+							    </div>
+                                <div class="listfooterr">
+                                    <span><a href="javascript:void(0)" class="transmitbtn" rel="{$vo.rootid} %&% // @{$vo.homepage} :{$vo.nohtmlcontent}">转发</a></span>
+                                    <span><a href="javascript:void(0)" class="commentbtn">评论</a></span>
+                                    <if condition= "$vo.id eq $userinfo['id']"> 
+                                    	<span><a href="{:U('ajax/ajaxDeleteMyTopic')}?tid={$vo.id}" class="deltpbtn">删除</a></span>
+                                    <else />
+                                    	<span><a href="javascript:void(0)" class="attabtn" rel="对 @{$vo.homepage} 说：">@TA</a></span>
+                                    </if>
+                                    <span><a href="{:U('ajax/ajaxAddFavorite')}?tid={$vo.id}" class="addfavoritebtn">收藏</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    </volist>
+                </ul>
+                </empty>
+        	</div>      
+        </div>
+    </div>
+</div>
+<include file="Public:footer" />

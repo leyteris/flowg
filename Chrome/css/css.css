@@ -1,0 +1,122 @@
+a {
+    text-decoration: none;
+    font-family: "宋体", "微软雅黑";
+    font: normal normal normal 12px / 1.75 Tahoma, Arial;
+    outline: none;
+}
+a:link, a:visited {
+    color: #666;
+}
+#layout {
+	border-radius: 5px;
+	color: #333;
+	overflow:hidden;
+	width:400px;
+}
+#header {
+	overflow:hidden;
+}
+#header h4{
+	background:url(../images/headerbg.png) no-repeat center top;
+	display:block;
+	text-indent:-9999px;
+	height:30px;
+}
+.list-footer{
+	margin-top:10px;
+}
+#user-info-box{
+	position:relative;
+	border: #e4e4e4 solid 1px;
+	border-radius: 5px;
+	padding:6px;
+	overflow:hidden;
+	width:380px;
+	margin:2px auto;
+}
+#post{
+	position:absolute;
+	top:0px;
+	right:20px;
+}
+#user-info-left,#user-info-right{
+	float:left;
+}
+#user-info-left{
+	margin-right:10px;
+}
+#user-info-left img{
+	width:40px;
+	height:40px;
+	padding:1px;
+	border:solid 1px #c0c0c0;
+}
+#user-info-right ul li{
+	display:inline;
+}
+#list-body {
+	background:url(../images/divider.png) no-repeat top center;
+	clear:both;
+    height: 350px;
+    overflow-y: scroll;
+	padding:0 5px;
+}
+#nav{
+	float:right;
+	clear:both;
+	overflow:hidden;
+	margin-right:10px;
+}
+#nav li{
+	display:inline;
+	margin-right:15px;
+}
+.list-item {
+    padding: 5px;
+    clear: both;
+    overflow: hidden;
+    border-bottom: 1px #c0c0c0 dashed;
+}
+
+.list-left {
+    float: left;
+    margin-right: 10px;
+}
+.list-left img {
+    border: 1px solid #ccc;
+    padding: 1px;
+    width: 50px;
+    height: 50px;
+}
+.list-right {
+    width: 290px;
+    float: left;
+    overflow: hidden;
+}
+.list-content{
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#post-editer {
+    width: 360px;
+	height: 51px;
+	padding: 5px;
+	border:none;
+	outline:none;
+	resize: none;
+	margin: 2px 10px;
+	background:url(../images/editer.png) no-repeat center top;
+}
+#post-btn{
+	height:20px;
+	width:58px;
+	display:block;
+	float:right;
+	margin:0 20px 2px 0;
+	text-indent:-9999px;
+	background:url(../images/button.png) no-repeat center top;
+}
+.hover{
+	background:#eee;;
+}
+

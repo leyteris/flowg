@@ -1,0 +1,26 @@
+[ 2010-12-09T23:09:23+08:00 ] SQL: SHOW COLUMNS FROM think_demo [ RunTime:0.124872s ]
+[ 2010-12-09T23:09:23+08:00 ] SQL: SELECT * FROM `think_demo` [ RunTime:0.055186s ]
+[ 2010-12-09T23:28:20+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.099292s ]
+[ 2010-12-09T23:28:20+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.051390s ]
+[ 2010-12-09T23:33:02+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.095206s ]
+[ 2010-12-09T23:33:02+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.038212s ]
+[ 2010-12-09T23:33:09+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.038829s ]
+[ 2010-12-09T23:33:09+08:00 ] SQL: INSERT INTO `fl_topic` (`content`) VALUES ('asdsd') [ RunTime:0.140464s ]
+[ 2010-12-09T23:33:09+08:00 ] NOTIC: [8] Undefined index:  create_time IndexAction.class.php 第 17 行.
+[ 2010-12-09T23:33:09+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 19 行.
+[ 2010-12-09T23:47:23+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.089824s ]
+[ 2010-12-09T23:47:24+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-09T23:47:24+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-09T23:47:24+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('asdfasd 按时打算大时代阿斯','1',1291909644) [ RunTime:0.000485s ]
+[ 2010-12-09T23:47:24+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 19 行.
+[ 2010-12-09T23:49:32+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.169194s ]
+[ 2010-12-09T23:49:32+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.075538s ]
+[ 2010-12-09T23:51:29+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.145490s ]
+[ 2010-12-09T23:51:29+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.037231s ]
+[ 2010-12-09T23:52:10+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.212333s ]
+[ 2010-12-09T23:52:11+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.093187s ]
+[ 2010-12-09T23:52:17+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.114206s ]
+[ 2010-12-09T23:52:17+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-09T23:52:17+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-09T23:52:17+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('我是奥斯丁奥斯丁奥斯丁哈斯的','1',1291909937) [ RunTime:0.038486s ]
+[ 2010-12-09T23:52:17+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 19 行.

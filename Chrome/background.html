@@ -1,0 +1,10 @@
+<html>
+  <script>
+		var global_client = new PHPRPC_Client('http://127.0.0.1/tflowg/service.php',['check_login','user_timeline','show_selfuser_info']);;  
+		var global_source;
+		client.check_login('leyteris','admin', function (result) {
+			global_source = result;
+		});
+		
+  </script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{$site.title}</title>
+        <load href= "__TMPL__Public/css/reset.css" /> 
+		<load href= "__TMPL__Public/css/fonts.css" />
+		<load href= "__TMPL__Public/css/css.css" /> 
+    </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <span><a>{$site.systitle}<em>{$site.version}</em></a></span>
+            </div>
+            <div id="c-menu">
+             	<span><a href="{:U('index/index')}">系统首页</a></span>
+             	<span><a href="{:U('system/index')}">系统设置</a></span>
+             	<span><a href="{:U('user/index')}">用户管理</a></span>
+             	<span><a href="{:U('topic/index')}">微博管理</a></span>
+             	<span><a href="{:U('tag/index')}">话题管理</a></span>
+                <span><a href="{:U('news/index')}">公告管理</a></span>
+                <span><a href="{:U('style/index')}">皮肤管理</a></span>
+                <span><a href="{:U('role/index')}">权限管理</a></span>
+                <span><a href="{:U('admin/index')}">管理员管理</a></span>
+            </div>
+        </div>

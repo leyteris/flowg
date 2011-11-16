@@ -1,0 +1,58 @@
+<include file="Public:header" />
+    <div class="blogbody">
+    	<include file="Index:right" />
+        <div class="left-nav">
+            <div class="msglistbox">
+                <ul id="msglistmenu">
+                	<li><a href="{:U('hall/index')}">热门人物</a></li>
+                	<li><a href="{:U('hall/hottopic')}">热门微博</a></li>
+                	<li><a href="{:U('hall/hottag')}">热门话题</a></li>
+                	<li><a href="{:U('hall/topickong')}">纯微博控</a></li>
+                </ul>
+                <ul id="talklist">
+                	<volist name="list" id="vo">
+                    <li class="listbody"  id="{$vo.id}">
+                    	<div class="userpic">
+                        	<a href="{$webpath}{$vo.homepage}"><img alt="头像" src="{:getUserAvatar($vo['avatar'],120)}" alt="{$vo.nickname}"/></a>
+                        </div>
+                        <div class="listbodyright">
+                            <a class="username" href="{$webpath}/{$vo.homepage}">
+                            	{$vo.nickname}:
+                            </a>
+                            <p class="usermsg">{$vo.content}</p>
+                            <if condition= "$vo.imgid neq 0"> 
+	                            <div class="useruppic">
+	                            	<a class="artZoom" href="{$vo.topicpic.url}" rel="{$vo.topicpic.url}">
+	                            		<img src="{$vo.topicpic.thumb_url}" />
+									</a>
+								</div>
+							</if>
+							<div class="listfooter">
+                            	<div class="listfooterl">
+                                    <span class="listuptime">{$vo.time}</span>
+                                    <span class="listupclt">来自<a href="#">{$vo.from}</a></span>
+									<if condition= "$vo.count neq 0"> 
+                                    	<span><a href="{:U('topic/index')}?tid={$vo.id}" class="replylistbtn">查看转发和评论({$vo.count})</a></span>
+                               		</if>
+							    </div>
+                                <div class="listfooterr">
+                                    <span><a href="javascript:void(0)" class="transmitbtn" rel="{$vo.rootid} %&% // @{$vo.homepage} :{$vo.nohtmlcontent}">转发</a></span>
+                                    <span><a href="javascript:void(0)" class="commentbtn">评论</a></span>
+                                    <if condition= "$vo.id eq $userinfo['id']"> 
+                                    	<span><a href="{:U('ajax/ajaxDeleteMyTopic')}?tid={$vo.id}" class="deltpbtn">删除</a></span>
+                                    <else />
+                                    	<span><a href="javascript:void(0)" class="attabtn" rel="对 @{$vo.homepage} 说：">@TA</a></span>
+                                    </if>
+                                    <span><a href="{:U('ajax/ajaxAddFavorite')}?tid={$vo.id}" class="addfavoritebtn">收藏</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    </volist>
+                </ul>
+				<div class="pages">{$page}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public:footer" />

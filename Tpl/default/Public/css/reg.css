@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	text-align:center;
+	background:url(../images/regwrapBg.jpg) top center no-repeat #19363F;
+	color:#999;
+	font-family:"微软雅黑","宋体";
+}
+a{
+	text-decoration:none;
+	font: normal normal normal 12px/1.75 Tahoma, Arial;
+}
+a:link,a:visited{
+	color:#666; 
+}
+.layout{
+	margin:0 auto;
+	width:800px;
+}
+.header{
+	height:88px;
+}
+.header .logo {
+	height:91px;
+	width:270px;
+	float:left;
+	display:inline;
+	margin-left:80px;
+	background:url(../images/logo-small.png) no-repeat top left;
+}
+.logo span {
+	display:none;
+}
+.wrapper{
+	border-bottom-left-radius: 6px 6px;
+	border-bottom-right-radius: 6px 6px;
+	border-top-left-radius: 6px 6px;
+	border-top-right-radius: 6px 6px;
+	text-align:left;
+	padding:60px 0 300px 30px;
+	background:url(../images/yuBg.gif) left bottom no-repeat #FFF;
+}
+.wrapperheader{
+	color:#FFF;
+	height:32px;
+	width:500px;
+	padding-left:40px;
+	padding-top:17px;
+	background:#B0E6FF;
+	margin-left:50px;
+	margin-bottom:40px;
+	border-bottom-left-radius: 6px 6px;
+	border-bottom-right-radius: 6px 6px;
+	border-top-left-radius: 6px 6px;
+	border-top-right-radius: 6px 6px;
+}
+#homepagetext{
+	margin-left:165px;
+	padding-bottom:5px;
+}
+.wrapper .item{
+	margin-top:10px;
+	overflow:hidden;
+	clear:both;
+}
+.wrapper .item label{
+	display:block;
+	text-align:right;
+	width:150px;
+	height:2.2em;
+	font-size:18px;
+	line-height:2.2em;
+	float:left;
+	margin-right:10px;
+	color:#5C9BCC;
+}
+.wrapper .item input{
+	border: 1px solid #CCC;
+	font-size: 24px;
+	margin-bottom: 16px;
+	margin-right: 6px;
+	margin-top: 2px;
+	padding: 3px;
+	width: 220px;
+	border-bottom-left-radius: 2px 2px;
+	border-bottom-right-radius: 2px 2px;
+	border-top-left-radius: 2px 2px;
+	border-top-right-radius: 2px 2px;
+}
+.wrapper .img{
+	margin-left:160px;
+}
+.wrapper .item input#V{
+	width:70px;
+}
+#regsubmit{
+	width:236px;
+	height:66px;
+	border:0;
+	text-indent:-9999px;
+	background:url(../images/btn.png) no-repeat top center;
+	margin-left:156px;
+	margin-top:40px;
+}
+#regsubmit.hover{
+	background:url(../images/btnHover.png) no-repeat top center;
+}
+

@@ -1,0 +1,31 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title><?php echo ($site["title"]); ?></title>
+        <link rel="stylesheet" type="text/css" href="__TMPL__Public/css/reset.css" /> 
+		<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/fonts.css" />
+		<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/login.css" /> 
+    </head>
+    <body>
+        <div id="loginbox">
+            <div id="loginboxtitle"><span>Flowg系统后台登陆</span></div>
+            <form action="<?php echo U('global/checkLogin');?>" method="post">
+                <div class="item">
+                    <label for="username">
+                       	 账号：
+                    </label>
+                    <input type="text" name="username" id="username" class="input" />
+                </div>
+                <div class="item">
+                    <label for="userpass">
+                       	 密码：
+                    </label>
+                    <input type="password" name="userpass" id="userpass" class="input" />
+                </div>
+                <input type="submit" name="submit" id="submit" value="  提 交  " tabindex="120" />
+                <input type="reset" value="  重置  " tabindex="130" />
+            </form>
+        </div>
+    </body>
+</html>

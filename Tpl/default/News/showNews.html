@@ -1,0 +1,17 @@
+<include file="Public:header" />
+<load href= "__TMPL__Public/css/news.css" /> 
+    <div class="blogbody">
+    	<include file="Index:right" />
+        <div class="left-nav">
+            <div class="artBody">
+            	<h2><a href="{:U('news/showNews')}?id={$list.id}">{$list.title}</a></h2>
+                <div class="dots"></div>
+                <span class="details">
+                	发布于{$list.time}  By {$list.nickname}
+                </span>
+                <div class="p">{$list.content}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public:footer" />

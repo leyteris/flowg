@@ -1,0 +1,32 @@
+<include file="Public:header" />
+        <div id="wrapper">
+        	<div id="maintitle">
+            	<span id="thistitle">>>设置权限</span>
+            	<a class="floatright" href="{:U('global/logout')}">注销</a>
+	            <span class="floatright">欢迎您！{@BackUserName}  </span>
+            </div>
+            <div id="main">
+                <form name="form" id="form" action="{:U('user/doSetRole')}" method="post">
+                    <div class="item">
+                        <label for="userid">
+                           	 账号：
+                        </label>
+                        <input type="text" name="userid" id="userid" value="{$u.userid}" class="input" disabled=""/>
+                    </div>
+                    <div class="item">
+                        <label for="roleid">
+							账号类别：
+                        </label>
+                        <select name="roleid" class="input" id="roleid">
+                        	<option value="0">普通用户</option>
+	                        <volist name="rolelist" id="vo">
+	                            <option value="{$vo.id}" <if condition= "$vo.id eq $u['roleid']">selected=""</if>>{$vo.rolename}</option>
+	                        </volist>
+                        </select>
+                    </div>
+                    <input name="id" type="hidden"  value="{$u.id}"  />
+                    <input type="submit" class="inputneedmar" name="submit" id="submit" value="  提 交  " tabindex="120" />
+                </form>
+            </div>
+        </div>
+<include file="Public:footer" />

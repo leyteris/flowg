@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	text-align: center;
+	color:#666;
+}
+a{
+	text-decoration:none;
+	font-family:"宋体","微软雅黑";
+	font: normal normal normal 12px/1.75 Tahoma, Arial;
+}
+a:link,a:visited{
+	color:#666; 
+}
+.header{
+	overflow:hidden;
+	background:url(../images/lbodyBg.gif) repeat-x top center;
+	border-bottom:8px #CCC solid;
+}
+.header-wrapper{
+	margin:0 auto;
+	background:#86c1e1 url(../images/lwrapBg.jpg) no-repeat top center;
+	width:960px;
+	height:210px;
+}
+.header-wrapper .logo{
+	text-indent:-9999px;
+}
+.header-wrapper .regBtn{
+	background:url(../images/btn.png) top center no-repeat;
+	width:236px;
+	height:66px;
+	float:right;
+	display:inline;
+	margin-top:115px;
+	margin-right:120px;
+}
+.header-wrapper .regBtn a{
+	display:block;
+	width:236px;
+	height:66px;
+	line-height:66px;
+	outline:none;
+	text-indent:-9999px;
+}
+.regBtn.hover{
+	background:url(../images/btnHover.png) no-repeat top center;
+}
+
+
+.wrapper{
+	width:960px;
+	margin:0 auto;
+	padding-top:15px;
+}
+.wrapper .left-wrapper{
+	width:565px;
+	overflow:hidden;
+	float:left;
+	text-align:left;
+}
+
+.wrapper .left-wrapper .ajaxtalkbox{
+	padding:0 10px;
+	overflow:hidden;
+	height:470px;
+	position:relative;
+}
+.wrapper .left-wrapper .ajaxtalkbox h1{
+	background:#F1F1F1;
+	padding:6px;
+	padding-left:10px;
+	margin-bottom:10px;
+}
+.wrapper .left-wrapper ul{
+	padding:2px 9px;
+}
+.wrapper .left-wrapper ul li{
+	overflow:hidden;
+	border-bottom:dashed #CCC 1px;
+	padding:10px 0;
+	_float:left;
+}
+.ajaxtalkbox .userpic{
+	float:left;
+	margin-right:5px;;
+}
+.ajaxtalkbox .userpic a img{
+	padding:1px;
+	border:1px #CCC solid;
+}
+.ajaxtalkbox .listbodyright{
+	float:right;
+	width:460px;
+	font-size:14px;
+}
+.ajaxtalkbox .listbodyright .name{
+	float:left;
+	line-height:24px;
+	font-size:16px;
+	color:#2B4A78
+}
+.ajaxtalkbox .listbodyright p{
+	line-height:24px;
+}
+.listuptime{
+	font-size:12px;
+	margin-top:7px;
+	display:block;
+}
+
+.coverdiv{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:565px;
+	height:30px;
+	background:url(../images/ajaxTalkBoxBg.png) repeat-x center top;
+	z-index:9999;
+}
+.wrapper .right-wrapper{
+	width:382px;
+	float:right;
+}
+.wrapper .right-wrapper .loginBox{
+	width:380px;
+	height:258px;
+	overflow:hidden;
+	background: #FFFDDD;
+	border: 1px solid #F1E8B7;
+	padding-top:80px;
+	border-bottom-left-radius: 6px 6px;
+	border-bottom-right-radius: 6px 6px;
+	border-top-left-radius: 6px 6px;
+	border-top-right-radius: 6px 6px;
+}
+.loginBox form{
+	text-align:left;
+	margin-left:70px;
+}
+.loginBox label{
+	margin-left:10px;
+}
+.loginBox #userpass, #username{
+	border: 1px solid #FFAC84;
+	background:#FFF!important;
+	font-size: 24px;
+	margin-bottom: 16px;
+	margin-right: 6px;
+	margin-top: 2px;
+	padding: 3px;
+	width: 220px;
+}
+#loginsubmit{
+	margin-top:12px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 2px 0px;
+	width: 97px;
+}
+.wrapper .right-wrapper .support{
+	text-align:left;
+	width:380px;
+	overflow:hidden;
+	margin-top:25px;
+}
+.wrapper .right-wrapper .support h1{
+	margin-left:20px;
+	margin-bottom:15px;
+	font-size:14px;
+}
+.support span{
+	width:60px;
+	height:60px;
+	display:block;
+	float:left;
+	margin-left:20px;
+	text-indent:-9999px;
+}
+span.IE{
+	background:url(../images/IE.gif);
+}
+span.Wap{
+	background:url(../images/UCWEB.gif);
+}
+span.Android{
+	background:url(../images/Android.gif);
+}
+span.AIR{
+	background:url(../images/AIR.gif);
+}
+	
+	
+.footer{
+	clear:both;
+	overflow:hidden;
+	background:url(../images/lfooterBg.gif) bottom center repeat-x;
+}
+.footer .footer-wrapper{
+	width:960px;
+	height:40px;
+	padding-top:20px;
+	margin:0 auto;
+	background:url(../images/lfooterWrapperBg.jpg) bottom center no-repeat;
+}
+.footer .footer-wrapper a{
+	color:#FFF;
+}
+	

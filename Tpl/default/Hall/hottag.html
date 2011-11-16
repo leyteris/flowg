@@ -1,0 +1,29 @@
+<include file="Public:header" />
+    <div class="blogbody">
+    	<include file="Index:right" />
+        <div class="left-nav">
+            <div class="msglistbox">
+                <ul id="msglistmenu">
+                	<li><a href="{:U('hall/index')}">热门人物</a></li>
+                	<li><a href="{:U('hall/hottopic')}">热门微博</a></li>
+                	<li><a href="{:U('hall/hottag')}">热门话题</a></li>
+                	<li><a href="{:U('hall/topickong')}">纯微博控</a></li>
+                </ul>
+                <ul id="talklist">
+				<volist name="list" id="vo">
+					<li class="listbody" style="padding-left:20px;">
+                        <div class="listbodyright">
+                            <a class="username" href="{:U('tag/index')}?tagid={$vo.id}">#{$vo.tagname}#</a>
+							<div class="detailbody" style="clear:both">
+								<span><a href="{:U('tag/index')}?tagid={$vo.id}">微博<em>{$vo.count|default="0"}</em>条</a></span>
+                            </div>
+                        </div>
+                    </li>
+                </volist>
+                </ul>
+				<div class="pages">{$page}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public:footer" />

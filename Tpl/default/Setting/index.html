@@ -1,0 +1,172 @@
+<include file="Public:header" />
+	<div class="blogbody">
+    	<div id="settingbody">
+    	<load href= "__TMPL__Public/js/jquery.validate.js" /> 
+    	<load href= "__TMPL__Public/js/setting.js" />
+        	<ul id="settingtitle">
+            	<li>
+                	<a href="{:U('setting/index')}">个人资料</a>
+                </li>
+                <li>
+                	<a href="{:U('setting/setAvatar')}">头像设置</a>
+                </li>
+                <li>
+                	<a href="{:U('setting/setPassword')}">密码设置</a>
+                </li>
+                <li>
+                	<a href="{:U('setting/setStyle')}">皮肤设置</a>
+                </li>
+            </ul>
+            <div>
+            <switch name="menu_item"> 
+            	<case value= "0" >
+            	<form name="settingform" id="settingform" action="{:U('setting/doSetting')}" method="post">
+                    <div class="item">
+                        <label for="username">账号</label>
+                        <input type="text" name="username" id="username" class="input" value="{$userinfo.userid}"  disabled=""/>              
+                    </div>
+                    <div class="item">
+                        <label for="homepage">个性域名</label>
+                        <div id="homepagetext">t.flowg.com/</div><input type="text" name="homepage" id="homepage" class="input" value="{$userinfo.homepage}" tabindex="10"  />     
+                    </div>
+                    <div class="inputneedmar">
+                    	<span>建议不要随意更改（作为@关于的我的参考）</span>
+                    </div>
+                    <div class="item">
+                        <label for="nickname">昵称</label>
+                        <input type="text" name="nickname" id="nickname" class="input" value="{$userinfo.nickname}" tabindex="20" />            
+                    </div>
+                    <div class="item">
+                        <label for="sex">性别</label>
+                        <input type="radio" value="2" name="sex" id="sex" checked=""  tabindex="30" >男   
+                        <input type="radio" value="1" name="sex" id="sex"  tabindex="40" >女
+                    </div>
+                    <div class="item">
+                        <label for="email">电子邮箱</label>
+                        <input type="text" name="email" id="email" class="input" value="{$userinfo.email}" tabindex="50" />          
+                    </div>                  
+                    <div class="item">
+                        <label for="personalpage">个人主页</label>
+                        <input type="text" name="personalpage" id="personalpage" class="input" value="{$userinfo.personalpage}" tabindex="60" />           
+                    </div>
+                    <div class="inputneedmar">
+                    	<span>没有的话也可以填写微博网址</span>
+                    </div>
+                    <div class="item">
+                        <label for="msn">MSN账号</label>
+                        <input type="text" name="msn" id="msn" class="input" value="{$userinfo.msn}" tabindex="70" />         
+                    </div>
+                    <div class="item">
+                        <label for="qq">QQ号码</label>
+                        <input type="text" name="qq" id="qq" class="input" value="{$userinfo.qq}" tabindex="80" />          
+                    </div>
+                    <div class="item">
+                        <label for="mobile">手机号码</label>
+                        <input type="text" name="mobile" id="mobile" class="input" value="{$userinfo.mobile}" tabindex="90" />         
+                    </div>
+                    <div class="item">
+                        <label for="memo">自我介绍</label>
+                        <textarea type="text" name="memo" id="memo" class="input" tabindex="100">{$userinfo.memo}</textarea>     
+                    </div>
+                    <!-- <div class="item">
+                        <label for="V">验证码</label>
+                        <input type="text" name="V" id="V" class="input" value="" size="20" tabindex="110" />         
+                    </div> -->
+                    <div class="inputneedmar">
+                    	<input type="submit" name="settingsubmit" id="settingsubmit" value="  提交   " tabindex="120" />  
+                    </div>     
+               </form>
+            </case> 
+            <case value="1">
+            	<if condition= "$cutimg neq 1"> 
+            	<form name="avatarform" id="avatarform" action="{:U('setting/doCutimg')}" method="post" enctype="multipart/form-data">
+                	<div>
+                    	<img src="{:getUserAvatar($userinfo['avatar'],120)}" alt="{$userinfo.nickname}" id="avatarPic">
+                    <div>
+                	<div class="item">
+                        <label for="avatar">选择图片</label>
+                        <input type="file" name="avatar" id="avatar" class="input"/>              
+                    </div>
+                    <div class="inputneedmar">
+                    	<input type="submit" name="settingsubmit" id="settingsubmit" value="  提交   " tabindex="120" />  
+                    </div>  
+                </form>
+                <else />
+                <load href= "__TMPL__Public/js/drag.js" /> 
+                <div class="pleft">
+					<div class="leftspace">
+					<table width="100%" border="0">
+						<tbody><tr>
+							<td rowspan="2" valign="top">
+							<form name="setavatar" id="setavatar" action="{:U('setting/doSetAvatar')}" method="post" onsubmit="return getcutpos();">
+							<input name="imgname" type="hidden" value="{$imgname}">
+							<div id="cut_div" style="border: 2px solid #888888; width: 284px; height: 266px; overflow: hidden; position: relative; top: 0px; left: 0px; margin: 4px; cursor: pointer;">
+							<table style="border-collapse: collapse; z-index: 10; filter: alpha(opacity = 75); position: relative; left: 0px; top: 0px; width: 284px; height: 266px; opacity: 0.75;" cellspacing="0" cellpadding="0" border="0" unselectable="on">
+								<tbody><tr>
+									<td style="background: #cccccc; height: 73px;" colspan="3"></td>
+								</tr>
+								<tr>
+									<td style="background: #cccccc; width: 82px;"></td>
+									<td style="border: 1px solid red; width: 120px; height: 120px;"></td>
+									<td style="background: #cccccc; width: 82px;"></td>
+								</tr>
+								<tr>
+									<td style="background: #cccccc; height: 73px;" colspan="3"></td>
+								</tr>
+							</tbody></table>
+							<img id="cut_img" style="position: relative; top: -266px; left: 0px; " src="{$imgurl}" width="284" height="178"></div>
+							<table cellspacing="0" cellpadding="0">
+								<tbody><tr>
+									<td><img style="margin-top: 5px; cursor: pointer;" src="__TMPL__Public/images/avatar/_h.gif" alt="图片缩小" onmouseover="this.src" =="" '="" dadao="" www="" tpl="" default="" public="" resource="" images="" avatar="" _c.gif';="" onmouseout="this.src" _h.gif';="" onclick="imageresize(false);"></td>
+									<td><img id="img_track" style="width: 250px; height: 18px; margin-top: 5px" src="__TMPL__Public/images/avatar/track.gif"></td>
+									<td><img style="margin-top: 5px; cursor: pointer;" src="__TMPL__Public/images/avatar/hh.gif" alt="图片放大" onmouseover="this.src" =="" '="" dadao="" www="" tpl="" default="" public="" resource="" images="" avatar="" +c.gif';="" onmouseout="this.src" +h.gif';="" onclick="imageresize(true);"></td>
+								</tr>
+							</tbody></table>
+							<img id="img_grip" style="position: absolute; z-index: 100; cursor: pointer; left: 221.732px; top: 380px; " src="__TMPL__Public/images/avatar/grip.gif">
+							<div style="padding-top: 15px; padding-left: 5px;"><input type="hidden" name="action" id="action" value="cutsave"> <input type="hidden" name="cut_pos" id="cut_pos" value=""> <input type="submit" class="button" name="submit" id="submit" value=" 确认裁剪并提交 "> &nbsp;&nbsp;&nbsp;&nbsp;<input type="button" class="button" name="cancel" id="cancel" value=" 取消 " onclick="javascript:" history.back(1);;=""></div>
+							</form>
+					
+							</td>
+							
+						</tr>
+						
+					</tbody></table>
+					<load href= "__TMPL__Public/js/setAvatar.js" /> 
+					</div>
+				</div>
+			</if>
+            </case>
+            <case value="2">
+            <form name="setPassform" id="setPassform" action="{:U('setting/doSetPassword')}" method="post">
+                    <div class="item">
+                        <label for="passwd">密码</label>
+                        <input type="password" name="passwd" id="passwd" class="input"/>              
+                    </div>
+                    <div class="item">
+                        <label for="repasswd">重复密码</label>
+                        <input type="password" name="repasswd" id="repasswd" class="input"/>              
+                    </div>
+                        
+                    <div class="inputneedmar">
+                    	<input type="submit" name="setpasssubmit" id="setpasssubmit" value="  提交   " tabindex="120" />  
+                    </div>     
+               </form>
+            </case>
+            <case value="3">
+            <load href= "__TMPL__Public/js/setStyle.js" />
+            	<form name="setStyleForm" id="setStyleForm" action="{:U('setting/doSetStyle')}" method="post">
+                    <div id="stylelist">
+                    <a title="默认皮肤" class="<if condition= "$thisStyle eq '0'">thisstyle<else/>styleimg</if>" href="javascript:void(0);" id="0"><img alt="默认皮肤" src="__TMPL__Public/thumb.jpg"><p class="name">默认皮肤</p></a>    
+                    <volist name="stlist" id="vo">
+                        <a title="{$vo.title}" class="<if condition= "$thisStyle eq $vo['id']">thisstyle<else/>styleimg</if>" href="{$webpath}{$vo.path}" id="{$vo.id}"><img alt="{$vo.title}" src="{$webpath}{$vo.path}thumb.jpg"><p class="name">{$vo.title}</p></a>    
+					</volist>  
+                    </div>                    
+               </form>
+            </case>
+            </switch> 
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<include file="Public:footer" />

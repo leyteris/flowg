@@ -1,0 +1,29 @@
+    		<div class="userinfo">
+            	<div class="user-head"> 
+					<div class="userheadpic">
+                		<a href="{$webpath}{$userinfo.homepage}" title="{$userinfo.nickname}"><img src="{:getUserAvatar($userinfo['avatar'],50)}" alt="{$userinfo.nickname}"/></a>
+               	 	</div> 
+					<div class="userheadbody"> 
+						<p>
+                    		<a class="font_14" href="{$webpath}{$userinfo.homepage}">{$userinfo.nickname|default=getUserNameID}</a> 
+						</p> 
+						<p><em>浙江</em><em>杭州</em></p>
+                	</div> 
+				</div> 
+                <div class="follow-body">
+                    <ul>
+                        <li class="borright">
+                            <span><a href="{$webpath}{$userinfo.homepage}">微博</a></span>
+                            <span class="num"><a href="{$webpath}{$userinfo.homepage}">{$loginUserTpCount|default="0"}</a></span>
+                        </li>
+                        <li class="borright">
+                            <span><a href="{:U('follow/index')}">关注</a></span>
+                            <span class="num"><a href="{:U('follow/index')}">{$loginUserFollows|default="0"}</a></span>
+                        </li>
+                        <li>
+                            <span><a href="{:U('follow/fans')}">粉丝</a></span>
+                            <span class="num"><a href="{:U('follow/fans')}">{$loginUserFans|default="0"}</a></span>
+                        </li>
+                    </ul>
+                </div>
+        	</div>

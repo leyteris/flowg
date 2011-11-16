@@ -1,0 +1,32 @@
+<include file="Public:header" />
+        <div id="wrapper">
+        	<div id="maintitle">
+            	<span id="thistitle">>>微博列表</span>
+            	<a class="floatright" href="{:U('global/logout')}">注销</a>
+	            <span class="floatright">欢迎您！{@BackUserName}  </span>
+            </div>
+            <div id="main">
+              <table id="listtable" width="100%" border="1" align="center" cellpadding="0"  cellspacing="0">
+                <tr>
+                  <th width="9%" scope="col">编号</th>
+                  <th width="9%" scope="col">用户账号</th>
+                  <th width="10%" scope="col">用户昵称</th>
+                  <th width="40%" scope="col">内容</th>
+                  <th width="20%" scope="col">注册时间</th>
+                  <th width="10%" scope="col">操作</th>
+                </tr>
+                <volist name="list" id="vo">
+                <tr>
+                  <td>{$vo.id}</td>
+                  <td>{$vo.userid}</td>
+                  <td>{$vo.nickname}</td>
+                  <td>{$vo.content}</td>
+                  <td>{$vo.time}</td>
+                  <td><a href="{:U('topic/delete')}?id={$vo.id}">删除</a></td>
+                </tr>
+                </volist>
+              </table>
+              <div id="page">{$page}</div>
+          </div>
+        </div>
+<include file="Public:footer" />

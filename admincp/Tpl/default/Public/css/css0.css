@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#215963;
+	text-align: center;
+	color:#666;
+}
+a{
+	text-decoration:none;
+	font-family:"宋体","微软雅黑";
+	font: normal normal normal 12px/1.75 Tahoma, Arial;
+}
+.left{
+	float:left;
+	margin-top: 20px;
+	_margin-top:0px;
+}
+a:link,a:visited{
+	color:#666; 
+}
+#header{
+	background:#47A4BE;
+	height:100px;
+	position:relative;
+}
+#wrapper{
+	background:#FFF;
+}
+#c-menu{
+	position:absolute;
+	right:30px;
+	bottom:20px;
+}
+#c-menu span{
+	padding:5px 10px;
+	background:#73BECE;
+}
+#c-menu span:hover{
+	padding:5px 10px;
+	background:#000;
+}
+#c-menu span a{
+	color:#FFF;
+}
+#logo{
+	position:absolute;
+	left:50px;
+	top:16px;
+}
+#logo a{
+	color:#FFF;
+	font-size:24px;
+	font-weight:700;
+}
+#logo a em{
+	font-size:18px;
+	margin-left:10px;
+}
+#wrapper{
+	padding:20px;
+	margin:20px;
+	overflow:hidden;
+	background:#F6F6F6;
+}
+#maintitle{
+	border:#999 1px solid;
+	padding:10px;
+	background:#FFF;
+	text-align:left;
+	margin-bottom:10px;
+	position:relative;
+	overflow:hidden;
+	_height:20px;
+}
+.floatright{
+	float:right;
+	margin-right:26px;
+}
+#maintitle span,#maintitle a{
+	font-size:16px;
+}
+#maintitle a{
+	line-height:1em;
+	*line-height:20px;
+	_line-height:20px;;
+}
+.iebo{
+	_display:block;
+	_margin-bottom:20px;
+	_float:left;
+	_margin-left:60px;
+	*display:block;
+	*margin-bottom:20px;
+	*float:left;
+	*margin-left:115px;
+}
+#main{
+	border:#999 1px solid;
+	padding:40px 30px;
+	background:#FFF;
+	text-align:left;
+	overflow:hidden;
+	font-family:"微软雅黑","宋体";
+	font-size:20px;
+	clear:both;
+}
+#main a{
+	font-family:"微软雅黑","宋体";
+	font-size:20px;
+}
+#maintitle span#thistitle{
+	margin-left:20px;
+	float:left;
+}
+#main input#homepage{
+	width:75px;
+}
+#main .item{
+	clear:both;
+}
+#main .item label{
+	display:block;
+	text-align:right;
+	width:100px;
+	height:2.2em;
+	font-size:18px;
+	line-height:2.2em;
+	float:left;
+	margin-right:10px;
+	color:#5C9BCC;
+}
+#main .item .input{
+	border: 1px solid #CCC;
+	margin-bottom: 16px;
+	margin-right: 6px;
+	margin-top: 2px;
+	padding: 3px;
+	width: 220px;
+	border-bottom-left-radius: 2px 2px;
+	border-bottom-right-radius: 2px 2px;
+	border-top-left-radius: 2px 2px;
+	border-top-right-radius: 2px 2px;
+}
+#main .item textarea.input{
+	width:820px;
+	height:340px;
+}
+#page{
+	margin-top:20px;
+	_margin-top:0px;
+	float:right;
+}
+.inputneedmar{
+	font-size: 18px;
+	margin-left:110px;
+	margin-bottom:16px;
+	margin-top:20px;
+}
+#main .item input#V{
+	width:70px;
+}
+/*#main #listtable{
+	border:#999 1px solid;
+}
+#main #listtable th,#main table td{
+	padding:3px;
+	text-align:center;
+}
+#main #listtable tr{
+	height:30px;
+}*/
+#footer{
+	background: #122D34;
+	clear: both;
+	height: 32px;
+	text-align: center;
+	width: 100%;
+}
+	
+table{border: none;border-collapse:collapse; border-spacing:0; font-size: 12px; width: 100%; color: #091F53;}
+table th{ background: url(table_bg.jpg); color:#d7e2eb; height: 26px; line-height: 26px; border: solid #C6D5E1;
+border-width: 1px 1px 0px 1px;}
+table td,table tr{ border: 1px solid #C6D5E1; height:20px; line-height: 20px; padding-left: 5px; }
+tr.alt td { background:#ECF2F6;  /*这行将给所有的tr加上背景色*/}
+tr.over td {background:#DCE6EE;  /*这个将是鼠标高亮行的背景色*/}
+
+	

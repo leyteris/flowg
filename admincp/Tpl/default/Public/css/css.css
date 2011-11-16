@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#215963;
+	text-align: center;
+	color:#666;
+}
+a{
+	text-decoration:none;
+	font-family:"宋体","微软雅黑";
+	font: normal normal normal 12px/1.75 Tahoma, Arial;
+}
+.left{
+	float:left;
+	margin-top: 20px;
+	_margin-top:0px;
+}
+a:link,a:visited{
+	color:#666; 
+}
+#header{
+	background:#47A4BE;
+	height:120px;
+	position:relative;
+}
+#wrapper{
+	background:#FFF;
+}
+#c-menu{
+	position:absolute;
+	right:30px;
+	bottom:20px;
+}
+#c-menu span{
+	padding:5px 10px;
+	background:#73BECE;
+}
+#c-menu span:hover{
+	padding:5px 10px;
+	background:#000;
+}
+#c-menu span a{
+	color:#FFF;
+}
+#logo{
+	position:absolute;
+	left:50px;
+	top:16px;
+}
+#logo a{
+	color:#FFF;
+	font-size:30px;
+	font-weight:500;
+	font-family: "微软雅黑","宋体";
+}
+#logo a em{
+	font-size:22px;
+	margin-left:10px;
+	font-family: "微软雅黑","宋体";
+}
+#wrapper{
+	padding:20px;
+	margin:20px;
+	overflow:hidden;
+	background:#F6F6F6;
+}
+#maintitle{
+	border:#999 1px solid;
+	padding:10px;
+	background:#FFF;
+	text-align:left;
+	margin-bottom:10px;
+	position:relative;
+	overflow:hidden;
+	_height:20px;
+	font-family: "微软雅黑","宋体";
+}
+.floatright{
+	float:right;
+	margin-right:26px;
+}
+#maintitle span,#maintitle a{
+	font-size:16px;
+}
+#maintitle a{
+	line-height:1em;
+	*line-height:20px;
+	_line-height:20px;;
+}
+.iebo{
+	_display:block;
+	_margin-bottom:20px;
+	_float:left;
+	_margin-left:60px;
+	*display:block;
+	*margin-bottom:20px;
+	*float:left;
+	*margin-left:115px;
+}
+#main{
+	border:#999 1px solid;
+	padding:40px 30px;
+	background:#FFF;
+	text-align:left;
+	overflow:hidden;
+	font-family:"微软雅黑","宋体";
+	font-size:14px;
+	clear:both;
+}
+#main a{
+	font-family:"微软雅黑","宋体";
+	font-size:14px;
+}
+#maintitle span#thistitle{
+	margin-left:20px;
+	float:left;
+}
+#main input#homepage{
+	width:75px;
+}
+#main .item{
+	clear:both;
+	overflow-y:hidden;
+}
+#main .item label{
+	display:block;
+	text-align:right;
+	width:100px;
+	height:2.2em;
+	font-size:14px;
+	line-height:2.2em;
+	float:left;
+	margin-right:10px;
+	color:#666;
+}
+#main .item .input{
+	border: 1px solid #CCC;
+	margin-bottom: 16px;
+	margin-right: 6px;
+	margin-top: 2px;
+	padding: 3px;
+	width: 220px;
+	border-bottom-left-radius: 2px 2px;
+	border-bottom-right-radius: 2px 2px;
+	border-top-left-radius: 2px 2px;
+	border-top-right-radius: 2px 2px;
+}
+#main .item .text{
+	line-height:30px;
+	display:block;
+	float:left;
+	width:600px;
+}
+#main .item textarea.input{
+	width:820px;
+	height:340px;
+}
+#page{
+	margin-top:20px;
+	_margin-top:0px;
+	float:right;
+}
+.inputneedmar{
+	font-size: 18px;
+	margin-left:110px;
+	margin-bottom:16px;
+	margin-top:20px;
+}
+#main .item input#V{
+	width:70px;
+}
+#main #listtable{
+	border:#999 1px solid;
+}
+#main #listtable th,#main table td{
+	padding:3px;
+	text-align:center;
+}
+#main #listtable tr{
+	height:30px;
+}
+#footer{
+	background: #122D34;
+	clear: both;
+	height: 32px;
+	text-align: center;
+	width: 100%;
+}
+	
+
+	

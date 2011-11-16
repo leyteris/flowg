@@ -1,0 +1,20 @@
+[ 2010-12-15T10:16:25+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.058654s ]
+[ 2010-12-15T10:16:25+08:00 ] SQL: SELECT * FROM `fl_topic` ORDER BY id desc LIMIT 15  [ RunTime:0.049326s ]
+[ 2010-12-15T10:16:36+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.022174s ]
+[ 2010-12-15T10:16:36+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-15T10:16:36+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-15T10:16:36+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('asdasas阿四大四大阿斯','1',1292379396) [ RunTime:0.042012s ]
+[ 2010-12-15T10:16:36+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-15T10:16:36+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-15T10:21:32+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.029536s ]
+[ 2010-12-15T10:21:32+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-15T10:21:32+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-15T10:21:32+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('asdasd asd奥斯丁奥斯丁阿斯上嘎嘎','1',1292379692) [ RunTime:0.036738s ]
+[ 2010-12-15T10:21:32+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-15T10:21:32+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.
+[ 2010-12-15T10:47:06+08:00 ] SQL: SHOW COLUMNS FROM fl_topic [ RunTime:0.042457s ]
+[ 2010-12-15T10:47:06+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-15T10:47:06+08:00 ] NOTIC: [8] Undefined offset:  3 Model.class.php 第 858 行.
+[ 2010-12-15T10:47:06+08:00 ] SQL: INSERT INTO `fl_topic` (`content`,`uid`,`create_time`) VALUES ('asdasd asd奥斯丁奥斯丁阿斯上嘎嘎','1',1292381226) [ RunTime:0.032781s ]
+[ 2010-12-15T10:47:06+08:00 ] NOTIC: [8] Undefined index:  from IndexAction.class.php 第 22 行.
+[ 2010-12-15T10:47:06+08:00 ] NOTIC: [8] Use of undefined constant json - assumed 'json' IndexAction.class.php 第 24 行.

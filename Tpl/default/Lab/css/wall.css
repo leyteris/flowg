@@ -1,0 +1,93 @@
+.color1{
+	background:url(../img/block1.png) no-repeat center;
+}
+.color2{
+	background:url(../img/block2.png) no-repeat center;
+}
+.color3{
+	background:url(../img/block3.png) no-repeat center;
+}
+.color4{
+	background:url(../img/block4.png) no-repeat center;
+}
+.color5{
+	background:url(../img/block5.png) no-repeat center;
+}
+.color6{
+	background:url(../img/block6.png) no-repeat center;
+}
+.bigshow{
+	width:400px;
+	height:auto;
+	background:#ffffff;
+	position:absolute;
+	display:none;
+	padding:30px 20px;
+}
+#fbody{
+    text-align: left;
+	color:#eee;
+	overflow:hidden;
+	margin-top:20px;
+}
+#fbody a{
+	color:#eee;
+}
+#elelist{
+	opacity:0.9;
+	border-radius: 10px; /*for opera*/
+    -moz-border-radius: 10px; /*for firefox*/
+    -webkit-border-radius: 10px; /*for webkit*/
+	text-align:left;
+	width:1000px;
+	height:653px;
+	position:relative;
+	margin:0 auto;
+	background:url(../img/bg3.png) repeat;
+	overflow:hidden;
+}
+#elelist .ele{
+	cursor : move;
+	width: 215px;
+	height: 120px;
+	position: absolute;
+	overflow: hidden;
+	padding: 40px 30px 40px 35px;
+}
+#elelist .ele .closer{
+	margin:40px 30px 0 0px;
+	float:right;
+	cursor:default;
+}
+#elelist .ele .maxer{
+	margin:40px 8px 0 0px;
+	float:right;
+	cursor:default;
+}
+#elelist .elebody{
+	clear:both;
+	margin:10px 30px 30px 30px;
+}
+#elelist .ele .ele-left {
+	float: left;
+}
+#elelist .ele .ele-right {
+	float: left;
+	margin-left: 10px;
+	width: 150px;
+}
+#fsform{
+	width:600px;
+	height:80px;
+	margin:0 auto;
+}
+#fsform #fstext{
+	width:260px;
+	height:80px;
+}
+.ele .closeBox{
+	cursor : pointer;
+	top:28px;
+	right:16px;
+	opacity:0.8;
+}

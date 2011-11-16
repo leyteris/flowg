@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#000 url(../images/bg.gif) repeat;
+	text-align: center;
+	color:#666;
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+	font-family:"微软雅黑","宋体";
+	font: normal normal normal 12px/1.75 Tahoma, Arial;
+}
+a:link,a:visited{
+	color:#666; 
+}
+#layout{
+	width:967px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#header{
+	margin-top:20px;
+	background:#CCC url(../images/header_bg.gif) no-repeat top center;
+	height:118px;
+	position:relative;
+}
+#logo{
+	color:#FFF;
+	position:absolute;
+	top:40px;
+	left:20px;
+	font-size:36px;
+	font-weight:700;
+}
+#logo em{
+	font-size:20px;
+	font-weight:500;
+}
+#wrapper{
+	overflow:hidden;
+	background:url(../images/bg_content.gif) repeat-y;
+	_float: left;
+}
+#headline{
+	height:30px;
+	background:url(../images/green-line.gif);
+	text-align:left;
+}
+#headline a{
+	margin-left:20px;
+	height:30px;
+	line-height:30px;
+}	
+#side{
+	float:right;
+	width:306px;
+	margin-top:20px;
+	margin-right:10px;
+}
+.r-pro{
+	background:url(../images/libg.gif) repeat-y top center;
+	font-size:14px;
+	text-align:left;
+	padding-bottom:30px;
+	margin-top:20px;
+}
+.r-pro h1{
+	background:url(../images/category.gif) no-repeat;
+	height:35px;
+	line-height:35px;
+	padding-left:20px;
+}
+.r-pro li{
+	clear: both;
+	color: #444334;
+	font-family: Tahoma, sans-serif;
+	font-size: 13px;
+	margin-left: 15px;
+	margin-top: 10px;
+	padding-left: 15px;
+	width: 254px;
+}
+#main{
+	float:left;
+	min-height:768px;
+	overflow:hidden;
+	padding-bottom:40px;
+}
+
+#main .artBody{
+	margin: 30px 10px 10px 0px;
+	width: 629px;
+}
+.artBody{
+	overflow:hidden;
+	text-align:left;
+	color: #61604D;
+	clear:both;
+}
+.artBody h2{
+	clear: both;
+	padding: 5px 5px 0px 22px;
+	font-family: Tahoma;
+	font-size: 19px;
+	font-weight: 200;
+}
+.artBody h2 a{
+	font-family: Tahoma;
+	font-size: 19px;
+	font-weight: 200;
+}
+.page{
+	float:left;
+	margin-left:20px;
+	margin-top:30px;
+}
+.artBody .dots{
+	background-image:url(../images/dots.gif);
+	background-repeat: no-repeat;
+	height: 3px;
+	margin: 1px 5px 0px 22px;
+	width: 599px;
+}
+.artBody .details{
+	color: #444334;
+	display: block;
+	font-family: Tahoma;
+	font-size: 12px;
+	margin: 0px 0px 12px 23px;
+}
+.artBody .p{
+	font-family: 'Trebuchet MS';
+	font-size: 13px;
+	line-height: 16px;
+	margin: 10px 10px 0px 22px;
+	overflow:hidden;
+}
+#footer{
+	background:#CCC url(../images/footer_down.gif) bottom center;
+	height:23px;
+	clear:both;
+}
+

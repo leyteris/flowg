@@ -1,0 +1,16 @@
+﻿{
+  "name": "Flowg For Chrome",
+  "version": "1.0",
+  "description": "Flowg For Chrome:支持Flowg微博的Chrome插件,是Flowg前端实验室产品之一，微博的查看及发布，有问题请找QQ582377620，Leyteris反馈。",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "popup": "popup.html"
+  },
+  "icons": {
+  	"128": "flowg_chrome.png"
+  },
+  "background_page": "background.html",
+  "permissions": [
+    "http://127.0.0.1/tflowg/service.php"
+  ]
+}

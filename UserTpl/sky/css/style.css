@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+body{
+	background:#fff url(../images/wrapBg.jpg) no-repeat;
+	background-position:center top ;
+	text-align: center;
+	color:#666;
+}
+.blogbody {
+	overflow:hidden;
+	border-bottom-left-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+}
+.blogbody .right-nav {
+	background:#E8F3CA;
+	border-left:solid 1px #CCC;
+}
+
+.blogbody .right-nav a{
+	color:#5C8C00;
+}
+.top-toolbar-div span a{
+	color:#fff;
+}
+.header-menu a{
+	color:#fff;
+	font-height:18px;
+}
+.right-nav .hotht li a{
+	color:#5C8C00;
+}
+.right-nav .r-pro li,.right-nav .r-pro p{
+	color:#5C8C00;
+}
+.userinfo em{
+	color:#5C8C00;
+}
+.top-toolbar .top-toolbar-bg{
+	filter:alpha(opacity=10); /*IE滤镜*/
+	-moz-opacity:0.1; /*Firefox私有*/
+	opacity:0.1;
+}
+.header-menu .header-menu-bg{
+	filter:alpha(opacity=30); /*IE滤镜*/
+	-moz-opacity:0.3; /*Firefox私有*/
+	opacity:0.3
+}
+	

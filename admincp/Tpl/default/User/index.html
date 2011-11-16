@@ -1,0 +1,33 @@
+<include file="Public:header" />
+        <div id="wrapper">
+        	<div id="maintitle">
+            	<span id="thistitle">>>管理用户</span>
+            	<a class="floatright" href="{:U('global/logout')}">注销</a>
+	            <span class="floatright">欢迎您！{@BackUserName}  </span>
+            </div>
+            <div id="main">
+              <table id="listtable" width="100%" border="1" align="center" cellpadding="0"  cellspacing="0">
+                <tr>
+                  <th width="9%" scope="col">编号</th>
+                  <th width="19%" scope="col">账号名称</th>
+                  <th width="16%" scope="col">昵称</th>
+                  <th width="10%" scope="col">所发微博数</th>
+                  <th width="16%" scope="col">注册时间</th>
+                  <th width="30%" scope="col">操作</th>
+                </tr>
+                <volist name="list" id="vo">
+                <tr>
+                  <td>{$vo.id}</td>
+                  <td>{$vo.userid}</td>
+                  <td>{$vo.nickname}</td>
+                  <td>{$vo.count}</td>
+                  <td>{$vo.time}</td>
+                  <td><a href="{:U('user/setPass')}?id={$vo.id}">修改密码</a>/<a href="{:U('user/setRole')}?id={$vo.id}">设置权限</a>/<a href="{:U('user/delete')}?id={$vo.id}">删除</a></td>
+                </tr>
+                </volist>
+              </table>
+              <div class="left"><a href="{:U('user/add')}">增加用户</a></div>
+              <div id="page">{$page}</div>
+          </div>
+        </div>
+<include file="Public:footer" />

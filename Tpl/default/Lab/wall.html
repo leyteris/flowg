@@ -1,0 +1,26 @@
+<include file="Public:header" /></div>
+<link rel="stylesheet" type="text/css" href="__TMPL__Lab/css/wall.css"/>
+	<script language="javascript" type="text/javascript" src="__TMPL__Lab/js/wall.js"></script>
+	<div id="fbody">
+		<div id="elelist">
+		<volist name="topicList" id="vo">
+			<div class="ele">
+				<div class="ele-left">
+				    <a href="{$webpath}{$vo.homepage}"><img src="{:getUserAvatar($vo['avatar'],50)}" alt="{$vo.nickname}" style="border:1px solid #ccc;padding:1px;" /></a>
+				</div>
+				<div class="ele-right">
+					<a class="closeBox"  title="关闭">关闭</a>
+				    <div class="ele-content"><a href="{$webpath}{$rs.homepage}">{$vo.nickname}</a> ： {$vo.content}</div>
+					<div class="clear">发布于{$vo.time} ,来自{$vo.from}</div>
+				</div>
+			</div>
+		</volist>
+		</div>
+		<!-- <div id="fsform">
+			<form action="#">
+				<textarea rows="20" cols="50" id="fstext"></textarea>
+				<input id="fssubmit"type="button" value="submit" />
+			</form>
+		</div> -->
+		</div></div>
+<include file="Public:footer" />

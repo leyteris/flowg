@@ -1,0 +1,2 @@
+[ 2011-04-21T10:59:36+08:00 ] SQL: SHOW COLUMNS FROM fl_user [ RunTime:0.067383s ]
+[ 2011-04-21T10:59:36+08:00 ] SQL: SELECT * FROM `fl_user` WHERE ( `userid` = 'admin' ) AND ( `password` = '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1  [ RunTime:0.052626s ]
